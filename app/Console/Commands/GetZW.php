@@ -45,12 +45,27 @@ class GetZW extends Command
         $qry = 'select * from ZW';
 
         $result = pg_query($dbconn, $qry);
-        $results = pg_fetch_all($result);
+        $result = pg_fetch_all($result);
+      
         echo "Te dhenat u morren nga databaza\n";
+
+        foreach ($results as $rs)
+        {
+            // print_r($rs);
+            $zw = zw::create(
+                [
+                    'SERIA' => $rs['SERIA'],
+                ]
+            );
+            $zw->fillTasks();
+
+            echo 'Task ' . $zw->SERIA . ' added!'."\n";
+        }
         echo "============================================\n";
         echo "Update perfundoi\n";
         //lidhja me vendo
         // krjimi i aws
         //            
     }
+
 }
