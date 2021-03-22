@@ -2,9 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\ZW;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 
-class GetZW extends Command
+class GetAws extends Command
 {
     /**
      * The name and signature of the console command.
@@ -37,35 +39,37 @@ class GetZW extends Command
      */
     public function handle()
     {
-        echo "Procesi filloi\n";
-        echo "============================================\n";
         $dbconn = pg_connect("host=89.174.178.194 port=5432 dbname=hcelblag user=hcelb password=homvendo123");
-        echo "Lidhja me databaze u formua\n";
 
         $qry = 'select * from ZW';
 
         $result = pg_query($dbconn, $qry);
-        $result = pg_fetch_all($result);
-      
-        echo "Te dhenat u morren nga databaza\n";
-
-        foreach ($results as $rs)
+        $results = pg_fetch_all($result);
+        foreach ($results as $dt)
         {
-            // print_r($rs);
-            $zw = zw::create(
+            // $date = new Carbon($rs['loading_date']);
+            $zw = Zw::show(
                 [
-                    'SERIA' => $rs['SERIA'],
+                    'id_trans' => $dt['idtrans'],
+                    'name' => $dt['aw_nr'], 
+                    'client' => $dt['client'],
+                    'tour_number' => $dt['tour_nr'],
+                    'loading_date' => $date->toDateString(),
+                    'coli' => $dt['coli'],
+                    'led' => $dt['led'] ?? 0,
+                    'coverage' => $dt['covered_notcovered'],
+                    'wm_quantity' => $dt['wm_quantity'],
+                    'created_at' => now(),
                 ]
             );
-            $zw->fillTasks();
+            // $zw->fillTasks();
 
-            echo 'Task ' . $zw->SERIA . ' added!'."\n";
+            // echo 'Task ' . $aw->name . ' added!'."\n";
         }
-        echo "============================================\n";
-        echo "Update perfundoi\n";
+        // echo "============================================\n";
+        // echo "Update perfundoi\n";
         //lidhja me vendo
         // krjimi i aws
         //            
     }
-
 }

@@ -10,10 +10,10 @@ use App\Models\zw;
 class ZwController extends Controller
 {
    //
-   function show()
+   function index()
    {
 
-       return DB::select('select * from zw', array(1));
-    //    return view('zw',['data'=>$data]);
+       $data= DB::select('select * from zw', array(1));
+       return view('zw',['data'=>$data]);
    }
 }
