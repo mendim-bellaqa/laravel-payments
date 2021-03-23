@@ -43,31 +43,10 @@ $zw['OPEN INVOCE'] = $rs['tr_tr_rodzaj']; //to check
 $zw['Proforma'] = $rs['tr_73104138']; //to check
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 array_push($data,$zw);
 }
 
-return view('zw',['data'=>$data]);
+// return view('zw',['data'=>$data]);
+return $data;
 }
 }
