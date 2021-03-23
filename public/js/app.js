@@ -1856,6 +1856,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -1915,6 +1917,76 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      data: []
+    };
+  },
+  created: function created() {
+    this.getZw();
+  },
+  methods: {
+    getZw: function getZw() {
+      var _this = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('api/get-zw').then(function (response) {
+        console.log(response.data);
+        _this.data = response.data;
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2093,20 +2165,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Home.vue */ "./resources/js/components/Home.vue");
+/* harmony import */ var _components_ZW_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/ZW.vue */ "./resources/js/components/ZW.vue");
+
 
 
  // import Worker from '../components/Worker/Worker.vue'
 
-vue__WEBPACK_IMPORTED_MODULE_1__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_2__.default);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
+vue__WEBPACK_IMPORTED_MODULE_2__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_3__.default);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_3__.default({
   mode: 'history',
   routes: [{
     path: '/',
     name: 'home',
     component: _components_Home_vue__WEBPACK_IMPORTED_MODULE_0__.default // meta: {
+    //     requiresAuth: true
+    // }
+
+  }, {
+    path: '/zw',
+    name: 'zw',
+    component: _components_ZW_vue__WEBPACK_IMPORTED_MODULE_1__.default // meta: {
     //     requiresAuth: true
     // }
 
@@ -2400,6 +2481,45 @@ component.options.__file = "resources/js/components/Home.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/ZW.vue":
+/*!****************************************!*\
+  !*** ./resources/js/components/ZW.vue ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ZW.vue?vue&type=template&id=9688af70& */ "./resources/js/components/ZW.vue?vue&type=template&id=9688af70&");
+/* harmony import */ var _ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ZW.vue?vue&type=script&lang=js& */ "./resources/js/components/ZW.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ZW.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/partials/Navbar.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/components/partials/Navbar.vue ***!
@@ -2474,6 +2594,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/ZW.vue?vue&type=script&lang=js&":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/ZW.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZW.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/partials/Navbar.vue?vue&type=script&lang=js&":
 /*!******************************************************************************!*\
   !*** ./resources/js/components/partials/Navbar.vue?vue&type=script&lang=js& ***!
@@ -2524,6 +2660,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Home.vue?vue&type=template&id=f2b6376c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ZW.vue?vue&type=template&id=9688af70&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/ZW.vue?vue&type=template&id=9688af70& ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZW.vue?vue&type=template&id=9688af70& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=template&id=9688af70&");
 
 
 /***/ }),
@@ -2603,10 +2756,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "grid grid-cols-1 md:grid-cols-6" }, [
+  return _c("div", [
     _c(
       "table",
-      { staticClass: "text-left w-full ml-5" },
+      { staticClass: "border-separate border border-green-800 ..." },
       [
         _vm._m(0),
         _vm._v(" "),
@@ -2616,105 +2769,224 @@ var render = function() {
             {
               key: data.id,
               staticClass:
-                "bg-grey-light flex flex-col items-center justify-between overflow-y-scroll w-full",
+                "bg-grey-light flex border-collapse: separate; flex-col items-center justify-between overflow-y-scroll w-full",
               staticStyle: { height: "50vh" }
             },
             [
-              _c("tr", { staticClass: "flex w-full mb-4" }, [
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["test1"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["data"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["ORDER NO"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["SERIA"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["KOD KLIENTA"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["MODEL"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["MATERIAL"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["PROFORMA NR"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["PROFORMA"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["STATUS HISTORY"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["ORDER VALUE [PLN]"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["Value proforma PLN"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["Value proforma Euro"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["ZO 1"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["ZO 2"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["PROD DATE ZO 1"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["PROD DATE ZO 2"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["OPEN INVOCE"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }, [
-                  _vm._v(_vm._s(data["Proforma"]))
-                ]),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" }),
-                _vm._v(" "),
-                _c("td", { staticClass: "p-4 w-1/4" })
-              ])
+              _c(
+                "tr",
+                { staticClass: "flex w-full mb-4 border-collapse: separate;" },
+                [
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 ..."
+                    },
+                    [_vm._v(_vm._s(data["test1"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["data"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["ORDER NO"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["SERIA"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["KOD KLIENTA"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["MODEL"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["MATERIAL"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["PROFORMA NR"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["PROFORMA"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["STATUS HISTORY"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["ORDER VALUE [PLN]"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["Value proforma PLN"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["Value proforma Euro"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["ZO 1"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["ZO 2"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["PROD DATE ZO 1"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["PROD DATE ZO 2"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["OPEN INVOCE"]))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "td",
+                    {
+                      staticClass:
+                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                    },
+                    [_vm._v(_vm._s(data["Proforma"]))]
+                  ),
+                  _vm._v(" "),
+                  _c("td", {
+                    staticClass: "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                  }),
+                  _vm._v(" "),
+                  _c("td", {
+                    staticClass: "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                  }),
+                  _vm._v(" "),
+                  _c("td", {
+                    staticClass: "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                  }),
+                  _vm._v(" "),
+                  _c("td", {
+                    staticClass: "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                  }),
+                  _vm._v(" "),
+                  _c("td", {
+                    staticClass: "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
+                  })
+                ]
+              )
             ]
           )
         })
@@ -2791,6 +3063,110 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=template&id=9688af70&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=template&id=9688af70& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "table",
+      { staticClass: "border-collapse: separate;" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._l(_vm.data, function(data) {
+          return _c(
+            "tbody",
+            {
+              key: data.id,
+              staticClass:
+                "bg-grey-light flex border-collapse: separate; flex-col items-center justify-between overflow-y-scroll w-full",
+              staticStyle: { height: "50vh" }
+            },
+            [
+              _c(
+                "tr",
+                { staticClass: "flex w-full mb-4 border-collapse: separate;" },
+                [
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["test1"]))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["data"]))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["ORDER NO"]))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["SERIA"]))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["KOD KLIENTA"]))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["MODEL"]))
+                  ]),
+                  _vm._v(" "),
+                  _c("td", { staticClass: "p-4 w-1/4" }, [
+                    _vm._v(_vm._s(data["MATERIAL"]))
+                  ])
+                ]
+              )
+            ]
+          )
+        })
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", { staticClass: "bg-black flex text-white w-full" }, [
+      _c("tr", { staticClass: "flex w-full mb-4" }, [
+        _c("td", [_vm._v("L.p")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("Buying Supplier Kategory (piorytet)")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("ORDER NO")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("SERIA")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("KOD KLIENTA")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("MODEL")]),
+        _vm._v(" "),
+        _c("td", [_vm._v("MATERIAL")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/partials/Navbar.vue?vue&type=template&id=40985fd2&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/partials/Navbar.vue?vue&type=template&id=40985fd2& ***!
@@ -2811,14 +3187,14 @@ var render = function() {
     "nav",
     {
       staticClass:
-        "w-60 bg-gray-700 dark:bg-gray-800 select-none overflow-y-auto\n\t\t\ttransition duration-500 ease-in-out"
+        "w-60 bg-gray-500 purple:bg-gray-800 select-none overflow-y-auto\n\t\t\ttransition duration-500 ease-in-out"
     },
     [
       _c(
         "div",
         { staticClass: "flex flex-col items-center " },
         [
-          _c("router-link", { attrs: { to: "/get-zw" } }, [
+          _c("router-link", { attrs: { to: "/" } }, [
             _c("button", { staticClass: "focus:outline-none" })
           ])
         ],
@@ -2833,7 +3209,7 @@ var render = function() {
               "pl-8 py-2 font-semibold text-white dark:text-gray-400\n\t\t\t\thover:bg-gray-500 dark-hover:bg-pink-500 mb-2 transition\n\t\t\t\tduration-500 ease-in-out"
           },
           [
-            _c("router-link", { attrs: { to: "/get-zw" } }, [
+            _c("router-link", { attrs: { to: "/" } }, [
               _c(
                 "button",
                 {
@@ -2862,7 +3238,7 @@ var render = function() {
               "pl-9 py-2 font-semibold text-white dark:text-gray-400\n\t\t\t\thover:bg-gray-500 dark-hover:bg-pink-500 mb-2 transition\n\t\t\t\tduration-500 ease-in-out"
           },
           [
-            _c("router-link", { attrs: { to: "/hr-import" } }, [
+            _c("router-link", { attrs: { to: "/zw" } }, [
               _c(
                 "button",
                 {
@@ -2903,7 +3279,7 @@ var render = function() {
                     _c("i", { staticClass: "far fa-file-excel" }),
                     _vm._v(" "),
                     _c("span", { staticClass: "ml-4 capitalize" }, [
-                      _vm._v("IMPORTO EXCEL PLUS")
+                      _vm._v("OVERDUE TABLE 1")
                     ])
                   ])
                 ]
@@ -2932,7 +3308,7 @@ var render = function() {
                     _c("i", { staticClass: "fas fa-laptop-code" }),
                     _vm._v(" "),
                     _c("span", { staticClass: "ml-4 capitalize" }, [
-                      _vm._v("PERFORMANCAT")
+                      _vm._v("OVERDUE TABLE 2")
                     ])
                   ])
                 ]

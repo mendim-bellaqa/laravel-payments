@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/get-zw', [ZwController::class, 'index']);
+Route::get('/zw', [ZwController::class, 'index']);
