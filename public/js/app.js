@@ -1949,7 +1949,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2759,7 +2758,7 @@ var render = function() {
   return _c("div", [
     _c(
       "table",
-      { staticClass: "border-separate border border-green-800 ..." },
+      { staticClass: "border-0 border-indigo-600 ..." },
       [
         _vm._m(0),
         _vm._v(" "),
@@ -2770,7 +2769,7 @@ var render = function() {
               key: data.id,
               staticClass:
                 "bg-grey-light flex border-collapse: separate; flex-col items-center justify-between overflow-y-scroll w-full",
-              staticStyle: { height: "50vh" }
+              staticStyle: { height: "10vh" }
             },
             [
               _c(
@@ -2779,19 +2778,13 @@ var render = function() {
                 [
                   _c(
                     "td",
-                    {
-                      staticClass:
-                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 ..."
-                    },
+                    { staticClass: "border-2 border-black md:border-1" },
                     [_vm._v(_vm._s(data["test1"]))]
                   ),
                   _vm._v(" "),
                   _c(
                     "td",
-                    {
-                      staticClass:
-                        "p-4 w-1/4 border-t-2 border-2 md:border-t-4 "
-                    },
+                    { staticClass: "border-2 border-black md:border-1" },
                     [_vm._v(_vm._s(data["data"]))]
                   ),
                   _vm._v(" "),
@@ -3000,7 +2993,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", { staticClass: "bg-black flex text-white w-full" }, [
+    return _c("thead", { staticClass: "bg-grey flex text-white w-full" }, [
       _c("tr", { staticClass: "flex w-full mb-4" }, [
         _c("td", [_vm._v("L.p")]),
         _vm._v(" "),
