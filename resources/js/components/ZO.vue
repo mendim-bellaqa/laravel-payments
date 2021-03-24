@@ -9,7 +9,9 @@
 								type="text"
 								v-model="search">
                 <p class="text-left md:text-center text-3xl ...">ZO and Data realizacia</p>
-						</div>
+						
+                        </div>
+
  <table class="rounded-t-lg m-5 w-5/6 border-collapse mx-auto bg-gray-200 text-gray-800">
   <tr class="text-left border-separate border-4 border-gray-300 ">
                 <th class="px-4 py-3 sticky top-0 px-6 py-3 text-black-900 bg-gray-200 border-collapse ">ZO</th>
