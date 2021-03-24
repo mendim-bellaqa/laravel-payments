@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../components/Home.vue';
 import ZW from '../components/ZW.vue';
+import ZO from '../components/ZO.vue';
 // import Worker from '../components/Worker/Worker.vue'
 
 
@@ -28,9 +29,14 @@ export default new VueRouter({
             //     requiresAuth: true
             // }
         },
-        
-
-
+        {
+            path: '/zo',
+            name: 'zo',
+            component: ZO,
+            // meta: {
+            //     requiresAuth: true
+            // }
+        },
 
     ]
 });

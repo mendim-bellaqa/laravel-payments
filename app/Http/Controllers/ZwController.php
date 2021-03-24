@@ -20,7 +20,6 @@ $results = pg_fetch_all($result);
 foreach ($results as $rs)
 {
 $zw['test1'] = $rs['tr_tr_rodzaj'];
-
 $zw['data'] = $rs['m1tre0_k_value971'];
 $zw['ORDER NO'] = $rs['tr_1971859888'];
 $zw['SERIA'] = $rs['zltr_1307032275'];
