@@ -12,19 +12,22 @@ class ZoController extends Controller
 //
 function index()
 {
-    $zo = Array();
-    $dbconn = pg_connect("host=89.174.178.194 port=5432 dbname=hcelblag user=hcelb password=homvendo123");
-    $qry = 'select * from zo_date_realizaci';
-    $result = pg_query($dbconn, $qry);
-    $results = pg_fetch_all($result);
-    foreach ($results as $rs)
+$data = Array();
+$dbconn = pg_connect("host=89.174.178.194 port=5432 dbname=hcelblag user=hcelb password=homvendo123");
+$qry = 'select * from zo_date_realizaci';
+
+$result = pg_query($dbconn, $qry);
+$results = pg_fetch_all($result);
+foreach ($results as $rs)
 {
-    $zo['ZO'] = $rs['numer_serii'];
-    $zo['DATA'] = $rs['tel_datazam'];
+$zo['zo'] = $rs['numer_serii'];
 
-array_push($zo,$zo);
+$zo['data'] = $rs['tel_datazam'];
 
+array_push($data,$zo);
 }
-    return $zo;
+
+// return view('zw',['data'=>$data]);
+return $data;
 }
 }
