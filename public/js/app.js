@@ -3032,8 +3032,6 @@ var render = function() {
         _vm._v(" "),
         _vm._m(2),
         _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
         _vm._l(_vm.filterZw, function(data, index) {
           return _c("tbody", { key: index.id }, [
             _c("tr", { staticClass: "bg-gray-100 border-b border-gray-200" }, [
@@ -3707,18 +3705,6 @@ var staticRenderFns = [
         )
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("table", { staticClass: "w-full text-center ..." }, [
-      _c("div", { staticClass: "w-full text-center ..." }, [
-        _vm._v(
-          "1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)"
-        )
-      ])
-    ])
   }
 ]
 render._withStripped = true
