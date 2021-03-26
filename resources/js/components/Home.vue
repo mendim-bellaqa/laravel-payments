@@ -84,9 +84,9 @@
         </tr>
         
         </table> -->
-        <!-- <table class="w-full text-center ...">
+        <table class="w-full text-center ...">
         <div class="w-full text-center ...">1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)</div>
-        </table> -->
+        </table>
 
 		    <tbody v-for="(data, index) in filterZw" :key="index.id">
 			
