@@ -27,19 +27,6 @@
 			</tr>
 
 		</tbody>
-
-        <tr class="text-left border-separate border-4 border-gray-300 ">
-                    <th class="px-4 py-3 sticky top-0 px-6 py-3 text-black-900 bg-gray-200 border-collapse ">ZO</th>
-                    <!-- <th class="px-4 py-3 sticky top-0 px-6 py-3 text-black-900 bg-gray-200 border-collapse ">Data realizacia</th> -->
-                </tr>
-
-                <tbody>
-                    <tr>
-                        <th>
-                            test
-                        </th>
-                    </tr>
-                </tbody>
 	
  </table>
 

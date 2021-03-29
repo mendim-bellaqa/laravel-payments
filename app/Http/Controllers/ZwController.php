@@ -43,6 +43,7 @@ $zw['Proforma'] = $rs['tr_73104138']; //to check
 
 
 array_push($data,$zw);
+
 }
 
 // return view('zw',['data'=>$data]);

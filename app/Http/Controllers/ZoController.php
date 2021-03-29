@@ -21,7 +21,6 @@ $results = pg_fetch_all($result);
 foreach ($results as $rs)
 {
 $zo['zo'] = $rs['numer_serii'];
-
 $zo['data'] = $rs['tel_datazam'];
 
 array_push($data,$zo);

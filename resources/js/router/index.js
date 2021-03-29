@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../components/Home.vue';
-import ZW from '../components/ZW.vue';
+import CLIENTS from '../components/CLIENTS.vue';
 import ZO from '../components/ZO.vue';
-// import Worker from '../components/Worker/Worker.vue'
 
 
 Vue.use(VueRouter);
@@ -22,9 +21,9 @@ export default new VueRouter({
             // }
         },
         {
-            path: '/zw',
-            name: 'zw',
-            component: ZW,
+            path: '/clients',
+            name: 'clients',
+            component: CLIENTS,
             // meta: {
             //     requiresAuth: true
             // }
