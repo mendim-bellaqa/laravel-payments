@@ -1931,6 +1931,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -1946,6 +1947,73 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios__WEBPACK_IMPORTED_MODULE_0___default().get('api/clients').then(function (response) {
+        console.log(response.data);
+        _this.data = response.data;
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS_BANK.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS_BANK.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      data: []
+    };
+  },
+  created: function created() {
+    this.bank();
+  },
+  methods: {
+    bank: function bank() {
+      var _this = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('api/bank').then(function (response) {
         console.log(response.data);
         _this.data = response.data;
       });
@@ -2279,6 +2347,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /***/ }),
 
@@ -2318,17 +2387,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Home.vue */ "./resources/js/components/Home.vue");
 /* harmony import */ var _components_CLIENTS_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CLIENTS.vue */ "./resources/js/components/CLIENTS.vue");
 /* harmony import */ var _components_ZO_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/ZO.vue */ "./resources/js/components/ZO.vue");
+/* harmony import */ var _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CLIENTS_BANK.vue */ "./resources/js/components/CLIENTS_BANK.vue");
 
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_4__.default);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_4__.default({
+
+vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_5__.default);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_5__.default({
   mode: 'history',
   routes: [{
     path: '/',
@@ -2348,6 +2419,13 @@ vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
     path: '/zo',
     name: 'zo',
     component: _components_ZO_vue__WEBPACK_IMPORTED_MODULE_3__.default // meta: {
+    //     requiresAuth: true
+    // }
+
+  }, {
+    path: '/bank',
+    name: 'bank',
+    component: _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_4__.default // meta: {
     //     requiresAuth: true
     // }
 
@@ -2641,6 +2719,45 @@ component.options.__file = "resources/js/components/CLIENTS.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/CLIENTS_BANK.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/CLIENTS_BANK.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CLIENTS_BANK_vue_vue_type_template_id_312c747e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CLIENTS_BANK.vue?vue&type=template&id=312c747e& */ "./resources/js/components/CLIENTS_BANK.vue?vue&type=template&id=312c747e&");
+/* harmony import */ var _CLIENTS_BANK_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CLIENTS_BANK.vue?vue&type=script&lang=js& */ "./resources/js/components/CLIENTS_BANK.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _CLIENTS_BANK_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _CLIENTS_BANK_vue_vue_type_template_id_312c747e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _CLIENTS_BANK_vue_vue_type_template_id_312c747e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CLIENTS_BANK.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue":
 /*!******************************************!*\
   !*** ./resources/js/components/Home.vue ***!
@@ -2793,6 +2910,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/CLIENTS_BANK.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/CLIENTS_BANK.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_BANK_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CLIENTS_BANK.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS_BANK.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_BANK_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/Home.vue?vue&type=script&lang=js& ***!
@@ -2875,6 +3008,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_vue_vue_type_template_id_29b14126___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_vue_vue_type_template_id_29b14126___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CLIENTS.vue?vue&type=template&id=29b14126& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS.vue?vue&type=template&id=29b14126&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CLIENTS_BANK.vue?vue&type=template&id=312c747e&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/CLIENTS_BANK.vue?vue&type=template&id=312c747e& ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_BANK_vue_vue_type_template_id_312c747e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_BANK_vue_vue_type_template_id_312c747e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CLIENTS_BANK_vue_vue_type_template_id_312c747e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CLIENTS_BANK.vue?vue&type=template&id=312c747e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS_BANK.vue?vue&type=template&id=312c747e&");
 
 
 /***/ }),
@@ -3123,7 +3273,7 @@ var render = function() {
                   staticClass:
                     "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
                 },
-                [_vm._v(_vm._s(data["numer_serii"]))]
+                [_vm._v(_vm._s(data["dni_po_terminie"]))]
               ),
               _vm._v(" "),
               _c(
@@ -3132,7 +3282,7 @@ var render = function() {
                   staticClass:
                     "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
                 },
-                [_vm._v(_vm._s(data["tel_datazam"]))]
+                [_vm._v(_vm._s(data["internalpaymentcdays"]))]
               )
             ])
           ])
@@ -3205,7 +3355,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_miejscowosc")]
+          [_vm._v("Miejscowosc")]
         ),
         _vm._v(" "),
         _c(
@@ -3214,7 +3364,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_ulica")]
+          [_vm._v("Adres")]
         ),
         _vm._v(" "),
         _c(
@@ -3223,7 +3373,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_kodpocztowy")]
+          [_vm._v("Kod pocztowy")]
         ),
         _vm._v(" "),
         _c(
@@ -3232,7 +3382,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_nip")]
+          [_vm._v("NIP")]
         ),
         _vm._v(" "),
         _c(
@@ -3250,7 +3400,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_zadluzenie")]
+          [_vm._v("Zadłużenie")]
         ),
         _vm._v(" "),
         _c(
@@ -3295,7 +3445,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("ZO NR")]
+          [_vm._v("DNI PO TERMINIE")]
         ),
         _vm._v(" "),
         _c(
@@ -3304,7 +3454,184 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("ZO DATE")]
+          [_vm._v("INTERNAL PAYMENT C DAY")]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS_BANK.vue?vue&type=template&id=312c747e&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CLIENTS_BANK.vue?vue&type=template&id=312c747e& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "table",
+      {
+        staticClass:
+          "md:container md:mx-auto rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800"
+      },
+      [
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._l(_vm.data, function(data, index) {
+          return _c("tbody", { key: index.id }, [
+            _c(
+              "tr",
+              {
+                staticClass:
+                  "md:container md:mx-auto bg-gray-100 border-b border-gray-200"
+              },
+              [
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                  },
+                  [_vm._v(_vm._s(++index))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                  },
+                  [_vm._v(_vm._s(data["client_name"]))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                  },
+                  [_vm._v(_vm._s(data["k_k_idklienta"]))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                  },
+                  [_vm._v(_vm._s(data["k_k_kredytdni"]))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "td",
+                  {
+                    staticClass:
+                      "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                  },
+                  [_vm._v(_vm._s(data["m1k_k_value984"]))]
+                )
+              ]
+            )
+          ])
+        })
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out"
+      },
+      [
+        _c("div", {
+          staticClass: "mt-1 mb-4 flex  items-center justify-between "
+        }),
+        _vm._v(" "),
+        _c("p", { staticClass: "md:text-center text-4xl ..." }, [
+          _vm._v("CLIENT'S BANK")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "tr",
+      {
+        staticClass:
+          "md:container md:mx-auto border-separate border-4 border-gray-300 "
+      },
+      [
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("L.p")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("CLIENTS NAME")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("ID KARTELA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("k_k_kredytdni")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("m1k_k_value984")]
         )
       ]
     )
@@ -4267,6 +4594,35 @@ var render = function() {
           "li",
           {
             staticClass:
+              "pl-8 py-2 font-semibold text-white dark:text-pink-400\n\t\t\t\t hover:bg-black-500 mb-2 transition\n\t\t\t\ttransition duration-150 ease-in-out"
+          },
+          [
+            _c("router-link", { attrs: { to: "/bank" } }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "focus:text-black-500 dark-focus:text-pink-400\n\t\t\t\t\t\tfocus:outline-none w-full transition transition duration-150 ease-in-out"
+                },
+                [
+                  _c("span", { staticClass: "flex items-center" }, [
+                    _c("i", { staticClass: "fas fa-laptop-code" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "ml-4 capitalize" }, [
+                      _vm._v("CLIENT'S BANK")
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass:
               "pl-9 py-2 font-semibold text-white dark:text-black-400\n\t\t\t\thover:bg-gray-500 dark-hover:bg-pink-500 mb-2 transition\n\t\t\t\ttransition duration-150 ease-in-out"
           },
           [
@@ -4283,35 +4639,6 @@ var render = function() {
                     _vm._v(" "),
                     _c("span", { staticClass: "ml-4 capitalize" }, [
                       _vm._v("ZO and Data realizacya")
-                    ])
-                  ])
-                ]
-              )
-            ])
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "li",
-          {
-            staticClass:
-              "pl-8 py-2 font-semibold text-white dark:text-pink-400\n\t\t\t\t hover:bg-black-500 mb-2 transition\n\t\t\t\ttransition duration-150 ease-in-out"
-          },
-          [
-            _c("router-link", { attrs: { to: "/performance" } }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "focus:text-black-500 dark-focus:text-pink-400\n\t\t\t\t\t\tfocus:outline-none w-full transition transition duration-150 ease-in-out"
-                },
-                [
-                  _c("span", { staticClass: "flex items-center" }, [
-                    _c("i", { staticClass: "fas fa-laptop-code" }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "ml-4 capitalize" }, [
-                      _vm._v("OVERDUE TABLE 2")
                     ])
                   ])
                 ]

@@ -24,7 +24,8 @@
         "tailwindcss": "^2.0.4",
         "vue": "^2.6.12",
         "vue-loader": "^15.9.6",
-        "vue-template-compiler": "^2.6.12"
+        "vue-template-compiler": "^2.6.12",
+        "webpack": "^5.28.0"
     },
     "dependencies": {
         "vue-router": "^3.5.1"

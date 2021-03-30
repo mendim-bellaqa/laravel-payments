@@ -11,21 +11,21 @@
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">L.p</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Kod</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Nazwa</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_miejscowosc</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_ulica</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_kodpocztowy</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_nip</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Miejscowosc</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Adres</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Kod pocztowy</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">NIP</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_dostodb</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_zadluzenie</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Zadłużenie</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value889</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value916</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value918</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value975</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">ZO NR</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">ZO DATE</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">DNI PO TERMINIE</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">INTERNAL PAYMENT C DAY</th>
     </tr>
 
- 
+
         <tbody v-for="(data, index) in data" :key="index.id">
 
         <tr class="bg-gray-100 border-b border-gray-200">
@@ -42,8 +42,9 @@
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value916'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value918'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value975'] }}</td>
-                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['numer_serii'] }}</td>
-                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['tel_datazam'] }}</td>
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['dni_po_terminie'] }}</td>
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['internalpaymentcdays'] }}</td>
+
 			</tr>
 		</tbody>
 </table>
