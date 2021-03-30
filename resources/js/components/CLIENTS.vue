@@ -21,7 +21,9 @@
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value916</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value918</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value975</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">DNI PO TERMINIE</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">br_br_nrkonta</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">br_br_opis</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_kredytdni</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">INTERNAL PAYMENT C DAY</th>
     </tr>
 
@@ -42,7 +44,12 @@
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value916'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value918'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value975'] }}</td>
-                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['dni_po_terminie'] }}</td>
+
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_nrkonta'] }}</td>
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_opis'] }}</td>
+
+
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_kredytdni'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['internalpaymentcdays'] }}</td>
 
 			</tr>

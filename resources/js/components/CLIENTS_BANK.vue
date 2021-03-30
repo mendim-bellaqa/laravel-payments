@@ -11,6 +11,8 @@
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">L.p</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">CLIENTS NAME</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">ID KARTELA</th>
+                    <th class="break-words px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">bank nr</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">bank opis</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_kredytdni</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value984</th>
         </tr>
@@ -21,8 +23,11 @@
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{++index}}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['client_name'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_idklienta'] }}</td>
+                    <td class="break-words px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_nrkonta'] }}</td>
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_opis'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_kredytdni'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value984'] }}</td>
+                   
 			</tr>
 		</tbody>
 </table>
