@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ZoController;
 use App\Http\Controllers\ZwController;
+use App\Http\Controllers\ZboController;
 use App\Http\Controllers\BankController;
 use App\Http\Controllers\ClientsController;
 
@@ -27,3 +28,4 @@ Route::get('/zw', [ZwController::class, 'index']);
 Route::get('/zo', [ZoController::class, 'index']);
 Route::get('/clients', [ClientsController::class, 'index']);
 Route::get('/bank', [BankController::class, 'index']);
+Route::get('/zbo', [ZboController::class, 'index']);

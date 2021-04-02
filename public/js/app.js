@@ -1936,9 +1936,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2171,8 +2168,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2205,6 +2200,90 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZBO.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZBO.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      data: []
+    };
+  },
+  created: function created() {
+    this.zbo();
+  },
+  methods: {
+    zbo: function zbo() {
+      var _this = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('api/zbo').then(function (response) {
+        console.log(response.data);
+        _this.data = response.data;
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZO.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZO.vue?vue&type=script&lang=js& ***!
@@ -2218,6 +2297,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2360,6 +2446,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /***/ }),
 
@@ -2398,20 +2502,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Home.vue */ "./resources/js/components/Home.vue");
 /* harmony import */ var _components_CLIENTS_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/CLIENTS.vue */ "./resources/js/components/CLIENTS.vue");
 /* harmony import */ var _components_ZO_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ZO.vue */ "./resources/js/components/ZO.vue");
 /* harmony import */ var _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/CLIENTS_BANK.vue */ "./resources/js/components/CLIENTS_BANK.vue");
+/* harmony import */ var _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ZBO.vue */ "./resources/js/components/ZBO.vue");
 
 
 
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_4__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_5__.default);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_5__.default({
+
+vue__WEBPACK_IMPORTED_MODULE_5__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_6__.default);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_6__.default({
   mode: 'history',
   routes: [{
     path: '/',
@@ -2438,6 +2544,13 @@ vue__WEBPACK_IMPORTED_MODULE_4__.default.use(vue_router__WEBPACK_IMPORTED_MODULE
     path: '/bank',
     name: 'bank',
     component: _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_3__.default // meta: {
+    //     requiresAuth: true
+    // }
+
+  }, {
+    path: '/zbo',
+    name: 'zbo',
+    component: _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_4__.default // meta: {
     //     requiresAuth: true
     // }
 
@@ -2809,6 +2922,45 @@ component.options.__file = "resources/js/components/Home.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/ZBO.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/components/ZBO.vue ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ZBO_vue_vue_type_template_id_7ed822a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ZBO.vue?vue&type=template&id=7ed822a8& */ "./resources/js/components/ZBO.vue?vue&type=template&id=7ed822a8&");
+/* harmony import */ var _ZBO_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ZBO.vue?vue&type=script&lang=js& */ "./resources/js/components/ZBO.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _ZBO_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _ZBO_vue_vue_type_template_id_7ed822a8___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ZBO_vue_vue_type_template_id_7ed822a8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ZBO.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ZO.vue":
 /*!****************************************!*\
   !*** ./resources/js/components/ZO.vue ***!
@@ -2954,6 +3106,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/ZBO.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/ZBO.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ZBO_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZBO.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZBO.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ZBO_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/ZO.vue?vue&type=script&lang=js&":
 /*!*****************************************************************!*\
   !*** ./resources/js/components/ZO.vue?vue&type=script&lang=js& ***!
@@ -3054,6 +3222,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_f2b6376c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Home.vue?vue&type=template&id=f2b6376c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ZBO.vue?vue&type=template&id=7ed822a8&":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/ZBO.vue?vue&type=template&id=7ed822a8& ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZBO_vue_vue_type_template_id_7ed822a8___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZBO_vue_vue_type_template_id_7ed822a8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZBO_vue_vue_type_template_id_7ed822a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZBO.vue?vue&type=template&id=7ed822a8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZBO.vue?vue&type=template&id=7ed822a8&");
 
 
 /***/ }),
@@ -3231,6 +3416,24 @@ var render = function() {
                   staticClass:
                     "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
                 },
+                [_vm._v(_vm._s(data["br_br_nrkonta"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["br_br_opis"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                },
                 [_vm._v(_vm._s(data["k_k_dostodb"]))]
               ),
               _vm._v(" "),
@@ -3277,24 +3480,6 @@ var render = function() {
                     "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
                 },
                 [_vm._v(_vm._s(data["m1k_k_value975"]))]
-              ),
-              _vm._v(" "),
-              _c(
-                "td",
-                {
-                  staticClass:
-                    "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
-                },
-                [_vm._v(_vm._s(data["br_br_nrkonta"]))]
-              ),
-              _vm._v(" "),
-              _c(
-                "td",
-                {
-                  staticClass:
-                    "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
-                },
-                [_vm._v(_vm._s(data["br_br_opis"]))]
               ),
               _vm._v(" "),
               _c(
@@ -3358,7 +3543,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("L.p")]
+          [_vm._v("L.P")]
         ),
         _vm._v(" "),
         _c(
@@ -3367,7 +3552,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Kod")]
+          [_vm._v("KOD")]
         ),
         _vm._v(" "),
         _c(
@@ -3376,7 +3561,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Nazwa")]
+          [_vm._v("NAZWA")]
         ),
         _vm._v(" "),
         _c(
@@ -3385,7 +3570,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Miejscowosc")]
+          [_vm._v("MIEJSCOWOSC")]
         ),
         _vm._v(" "),
         _c(
@@ -3394,7 +3579,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Adres")]
+          [_vm._v("ADRES")]
         ),
         _vm._v(" "),
         _c(
@@ -3403,7 +3588,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Kod pocztowy")]
+          [_vm._v("KOD POCZTOVY")]
         ),
         _vm._v(" "),
         _c(
@@ -3421,7 +3606,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_dostodb")]
+          [_vm._v("NR KONTO")]
         ),
         _vm._v(" "),
         _c(
@@ -3430,7 +3615,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Zadłużenie")]
+          [_vm._v("BANK NAME")]
         ),
         _vm._v(" "),
         _c(
@@ -3439,7 +3624,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("m1k_k_value889")]
+          [_vm._v("PROVIDE / RECIPENT")]
         ),
         _vm._v(" "),
         _c(
@@ -3448,7 +3633,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("m1k_k_value916")]
+          [_vm._v("ZADŁUŻENIE")]
         ),
         _vm._v(" "),
         _c(
@@ -3457,7 +3642,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("m1k_k_value918")]
+          [_vm._v("UWAGI O POROZUMIENIU")]
         ),
         _vm._v(" "),
         _c(
@@ -3466,7 +3651,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("m1k_k_value975")]
+          [_vm._v("KATEGORY (PRIORYTET) ")]
         ),
         _vm._v(" "),
         _c(
@@ -3475,7 +3660,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("br_br_nrkonta")]
+          [_vm._v("AGREEMENT")]
         ),
         _vm._v(" "),
         _c(
@@ -3484,7 +3669,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("br_br_opis")]
+          [_vm._v("DELIVERY PAYMENT AFTER PROFORMA")]
         ),
         _vm._v(" "),
         _c(
@@ -3493,7 +3678,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_kredytdni")]
+          [_vm._v("OKRES SPŁATY W DNIACH")]
         ),
         _vm._v(" "),
         _c(
@@ -3661,7 +3846,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("L.p")]
+          [_vm._v("L.P")]
         ),
         _vm._v(" "),
         _c(
@@ -3688,7 +3873,7 @@ var staticRenderFns = [
             staticClass:
               "break-words px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("bank nr")]
+          [_vm._v("BANK NR")]
         ),
         _vm._v(" "),
         _c(
@@ -3697,7 +3882,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("bank opis")]
+          [_vm._v("BANK NAME")]
         ),
         _vm._v(" "),
         _c(
@@ -3706,7 +3891,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("k_k_kredytdni")]
+          [_vm._v("OKRES SPŁATY W DNIACH")]
         ),
         _vm._v(" "),
         _c(
@@ -3715,7 +3900,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("m1k_k_value984")]
+          [_vm._v("INTERNAL PAYMENT C DAYS")]
         )
       ]
     )
@@ -3743,53 +3928,20 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "xl" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "flex justify-center py-4 font-semibold border mt-10" },
-      [
-        _c(
-          "div",
-          { staticClass: "align-middle inline-block overflow-hidden" },
-          [
-            _c("div", { staticClass: "mx-auto container mb-8" }, [
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.search,
-                    expression: "search"
-                  }
-                ],
-                staticClass:
-                  "ml-2 shadow appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-gray-300",
-                attrs: { placeholder: "FILTER BY KOD KLIENTA", type: "text" },
-                domProps: { value: _vm.search },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
-                    }
-                    _vm.search = $event.target.value
-                  }
-                }
-              })
-            ])
-          ]
-        )
-      ]
-    ),
+    _vm._m(1),
     _vm._v(" "),
     _c(
       "table",
-      { staticClass: "rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800" },
+      {
+        staticClass: "xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800"
+      },
       [
-        _vm._m(1),
-        _vm._v(" "),
         _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
         _vm._v(" "),
         _vm._l(_vm.filterZw, function(data, index) {
           return _c("tbody", { key: index.id }, [
@@ -4024,7 +4176,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out"
+          "xl px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out"
       },
       [
         _c("div", {
@@ -4034,6 +4186,30 @@ var staticRenderFns = [
         _c("p", { staticClass: "md:text-center text-4xl ..." }, [
           _vm._v("PAYMENTS REPORT")
         ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "xl flex justify-center py-4 font-semibold border mt-10" },
+      [
+        _c(
+          "div",
+          { staticClass: "align-middle inline-block overflow-hidden" },
+          [
+            _c("div", { staticClass: "mx-auto container mb-8" }, [
+              _c("input", {
+                staticClass:
+                  "ml-2 shadow appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-gray-300",
+                attrs: { placeholder: "FILTER BY KOD KLIENTA", type: "text" }
+              })
+            ])
+          ]
+        )
       ]
     )
   },
@@ -4091,7 +4267,7 @@ var staticRenderFns = [
             staticClass:
               "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-500 "
           },
-          [_vm._v(" WORK DAYS from material arrival to data realizacji:")]
+          [_vm._v(" WORK DAYS FROM MATERIAL ARRIVAL TO DATA REALIZACJI:")]
         ),
         _vm._v(" "),
         _c(
@@ -4235,7 +4411,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("L.p")]
+          [_vm._v("L.P")]
         ),
         _vm._v(" "),
         _c(
@@ -4244,7 +4420,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Buying Supplier Kategory (piorytet)")]
+          [_vm._v("BUYING SUPPLIER KATEGORY (PIORYTET)")]
         ),
         _vm._v(" "),
         _c(
@@ -4278,7 +4454,7 @@ var staticRenderFns = [
           "th",
           {
             staticClass:
-              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
+              "text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
           },
           [_vm._v(" MODEL")]
         ),
@@ -4287,7 +4463,7 @@ var staticRenderFns = [
           "th",
           {
             staticClass:
-              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
+              "text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
           },
           [_vm._v(" MATERIAL")]
         ),
@@ -4343,7 +4519,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v(" Value proforma PLN")]
+          [_vm._v(" VALUE PROFORMA PLN")]
         ),
         _vm._v(" "),
         _c(
@@ -4352,7 +4528,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v(" Value proforma Euro")]
+          [_vm._v(" VALUE PROFORMA EURO")]
         ),
         _vm._v(" "),
         _c(
@@ -4415,7 +4591,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
           },
-          [_vm._v(" Proforma")]
+          [_vm._v(" PROFORMA")]
         ),
         _vm._v(" "),
         _c(
@@ -4424,7 +4600,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
           },
-          [_vm._v(" Value 3 days before punctual")]
+          [_vm._v(" VALUE 3 DAYS BEFORE PUNCTUAL")]
         ),
         _vm._v(" "),
         _c(
@@ -4433,7 +4609,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
           },
-          [_vm._v(" Value 3 days before internal payment date")]
+          [_vm._v(" VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE")]
         ),
         _vm._v(" "),
         _c(
@@ -4442,7 +4618,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"
           },
-          [_vm._v(" positions to pay")]
+          [_vm._v(" POSITIONS TO PAY")]
         ),
         _vm._v(" "),
         _c(
@@ -4451,7 +4627,7 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300"
           },
-          [_vm._v("  positions payed")]
+          [_vm._v("  POSITIONS PAYED")]
         ),
         _vm._v(" "),
         _c(
@@ -4460,7 +4636,252 @@ var staticRenderFns = [
             staticClass:
               "px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"
           },
-          [_vm._v(" positions still to pay")]
+          [_vm._v(" POSITIONS STILL TO PAY")]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZBO.vue?vue&type=template&id=7ed822a8&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZBO.vue?vue&type=template&id=7ed822a8& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "table",
+      {
+        staticClass:
+          "rounded-t-lg m-5 w-5/6 border-collapse mx-auto bg-gray-200 text-gray-800"
+      },
+      [
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._l(_vm.data, function(data, index) {
+          return _c("tbody", { key: index.id }, [
+            _c("tr", { staticClass: "bg-gray-100 border-b border-gray-200" }, [
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 border-gray-300"
+                },
+                [_vm._v(_vm._s(++index))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["rr_rr_datadokumentu"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["rr_rr_dataplatnosci"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["klrr_k_kod"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["klrr_k_nazwa"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["rr_1205225012"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["rr_282851663"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["m1rr_k_value918"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["m1rr_k_value984"]))]
+              )
+            ])
+          ])
+        })
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out"
+      },
+      [
+        _c("div", {
+          staticClass: "mt-1 mb-4 flex  items-center justify-between "
+        }),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight \n                focus:outline-none focus:shadow-outline border-gray-300",
+          attrs: { placeholder: "Search", type: "text" }
+        }),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-center md:text-center text-3xl ..." }, [
+          _vm._v("Zobowiązania - REPORT")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "tr",
+      { staticClass: "text-center border-separate border-4 border-gray-300 " },
+      [
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("L.p")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("DATA DOKUMENTU")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("DATA PLATNOSCI")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("KOD")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("NAZWA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("DNI PO TERMINIE")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("POZOSTAŁO [PLN]")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("AGREEMENT")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("INTERNAL PAYMENT C DAYS")]
         )
       ]
     )
@@ -4500,16 +4921,35 @@ var render = function() {
       [
         _vm._m(1),
         _vm._v(" "),
-        _vm._l(_vm.data, function(data) {
-          return _c("tbody", { key: data.id }, [
+        _vm._l(_vm.data, function(data, index) {
+          return _c("tbody", { key: index.id }, [
             _c("tr", { staticClass: "bg-gray-100 border-b border-gray-200" }, [
-              _c("td", { staticClass: "px-4 py-3 border-collapse " }, [
-                _vm._v(_vm._s(data["zo"]))
-              ]),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300"
+                },
+                [_vm._v(_vm._s(++index))]
+              ),
               _vm._v(" "),
-              _c("td", { staticClass: "px-4 py-3 border-collapse " }, [
-                _vm._v(_vm._s(data["data"]))
-              ])
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["zo"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "text-center px-4 py-3 border-collapse border-4 border-gray-300 "
+                },
+                [_vm._v(_vm._s(data["data"]))]
+              )
             ])
           ])
         })
@@ -4558,7 +4998,16 @@ var staticRenderFns = [
           "th",
           {
             staticClass:
-              "px-4 py-3 sticky top-0 px-6 py-3 text-black-900 bg-gray-200 border-collapse "
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("L.p")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
           [_vm._v("ZO")]
         ),
@@ -4567,9 +5016,9 @@ var staticRenderFns = [
           "th",
           {
             staticClass:
-              "px-4 py-3 sticky top-0 px-6 py-3 text-black-900 bg-gray-200 border-collapse "
+              "text-center px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 "
           },
-          [_vm._v("Data realizacia")]
+          [_vm._v("DATA REALIZACIA")]
         )
       ]
     )
@@ -4723,6 +5172,35 @@ var render = function() {
                     _vm._v(" "),
                     _c("span", { staticClass: "ml-4 capitalize" }, [
                       _vm._v("ZO and Data realizacya")
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass:
+              "pl-8 py-2 font-semibold text-white dark:text-pink-400\n\t\t\t\t hover:bg-black-500 mb-2 transition\n\t\t\t\ttransition duration-150 ease-in-out"
+          },
+          [
+            _c("router-link", { attrs: { to: "/zbo" } }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "focus:text-black-500 dark-focus:text-pink-400\n\t\t\t\t\t\tfocus:outline-none w-full transition transition duration-150 ease-in-out"
+                },
+                [
+                  _c("span", { staticClass: "flex items-center" }, [
+                    _c("i", { staticClass: "fas fa-laptop-code" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "ml-4 capitalize" }, [
+                      _vm._v("zobowiazania")
                     ])
                   ])
                 ]

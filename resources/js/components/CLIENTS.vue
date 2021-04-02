@@ -8,22 +8,22 @@
   <table class="rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800">
 
   <tr class="border-separate border-4 border-gray-300 ">
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">L.p</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Kod</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Nazwa</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Miejscowosc</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Adres</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Kod pocztowy</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">L.P</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">KOD</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">NAZWA</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">MIEJSCOWOSC</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">ADRES</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">KOD POCZTOVY</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">NIP</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_dostodb</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">Zadłużenie</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value889</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value916</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value918</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">m1k_k_value975</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">br_br_nrkonta</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">br_br_opis</th>
-                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">k_k_kredytdni</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">NR KONTO</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">BANK NAME</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">PROVIDE / RECIPENT</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">ZADŁUŻENIE</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">UWAGI O POROZUMIENIU</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">KATEGORY (PRIORYTET) </th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">AGREEMENT</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">DELIVERY PAYMENT AFTER PROFORMA</th>
+                    <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">OKRES SPŁATY W DNIACH</th>
                     <th class="px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-gray-200 border-collapse border-4 border-gray-300 ">INTERNAL PAYMENT C DAY</th>
     </tr>
 
@@ -38,17 +38,14 @@
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_ulica'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_kodpocztowy'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_nip'] }}</td>
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_nrkonta'] }}</td>
+                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_opis'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_dostodb'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_zadluzenie'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value889'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value916'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value918'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['m1k_k_value975'] }}</td>
-
-                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_nrkonta'] }}</td>
-                    <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['br_br_opis'] }}</td>
-
-
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['k_k_kredytdni'] }}</td>
                     <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['internalpaymentcdays'] }}</td>
 

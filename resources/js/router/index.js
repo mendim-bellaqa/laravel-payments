@@ -4,6 +4,7 @@ import Home from '../components/Home.vue';
 import CLIENTS from '../components/CLIENTS.vue';
 import ZO from '../components/ZO.vue';
 import CLIENTS_BANK from '../components/CLIENTS_BANK.vue';
+import ZBO from '../components/ZBO.vue';
 
 
 
@@ -42,6 +43,14 @@ export default new VueRouter({
             path: '/bank',
             name: 'bank',
             component: CLIENTS_BANK,
+            // meta: {
+            //     requiresAuth: true
+            // }
+        },
+        {
+            path: '/zbo',
+            name: 'zbo',
+            component: ZBO,
             // meta: {
             //     requiresAuth: true
             // }
