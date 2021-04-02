@@ -2168,6 +2168,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -3943,6 +3944,8 @@ var render = function() {
         _vm._v(" "),
         _vm._m(3),
         _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
         _vm._l(_vm.filterZw, function(data, index) {
           return _c("tbody", { key: index.id }, [
             _c("tr", { staticClass: "bg-gray-100 border-b border-gray-200" }, [
@@ -4640,6 +4643,26 @@ var staticRenderFns = [
         )
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c(
+        "td",
+        {
+          staticClass:
+            "w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
+          attrs: { colspan: "26" }
+        },
+        [
+          _vm._v(
+            "1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)"
+          )
+        ]
+      )
+    ])
   }
 ]
 render._withStripped = true
