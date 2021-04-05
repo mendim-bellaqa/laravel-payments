@@ -7,8 +7,7 @@
      <p class="md:text-center text-4xl ...">PAYMENTS REPORT</p>
 
     </div>
-
-
+    
     <div class="xl flex justify-center py-4 font-semibold border mt-10">
 					<div class="align-middle inline-block overflow-hidden">
 						<div  class="mx-auto container mb-8">
