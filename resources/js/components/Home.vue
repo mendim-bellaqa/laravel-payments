@@ -2,10 +2,12 @@
   <div class="xl">
    <div class="xl px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out">
      <div class="mt-1 mb-4 flex  items-center justify-between "></div>	
+     <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24
+                       px-4 rounded" onclick="window.print()">PRINT THE REPORT</button>
      <p class="md:text-center text-4xl ...">PAYMENTS REPORT</p>
 
     </div>
-    
+
 
     <div class="xl flex justify-center py-4 font-semibold border mt-10">
 					<div class="align-middle inline-block overflow-hidden">

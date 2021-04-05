@@ -1,3 +1,19 @@
+import Vue from "vue";
+import App from "./App.vue";
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbvue/build/css/mdb.css';
+import App from './App.vue';
+import MyComponent from './MyComponent.vue';
+
+Vue.config.productionTip = false;
+
+// Globally register your component
+Vue.component('my-component', MyComponent);
+
+new Vue({
+  render: h => h(App)
+}).$mount("#app");
+
 $(function() {
 
   $('.js-check-all').on('click', function() {
@@ -15,7 +31,7 @@ $(function() {
   	}
 
   });
-
+  
   $('th[scope="row"] input[type="checkbox"]').on('click', function() {
     if ( $(this).closest('tr').hasClass('active') ) {
       $(this).closest('tr').removeClass('active');
@@ -23,7 +39,4 @@ $(function() {
       $(this).closest('tr').addClass('active');
     }
   });
-
-    
-
 });

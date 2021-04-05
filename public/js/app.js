@@ -1936,6 +1936,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2008,6 +2010,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2045,6 +2049,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
 //
 //
 //
@@ -2261,6 +2267,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2340,6 +2350,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2370,6 +2381,20 @@ __webpack_require__.r(__webpack_exports__);
   \**********************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3526,7 +3551,17 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", { staticClass: "md:text-center text-4xl ..." }, [
           _vm._v("CLIENTS REPORT")
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n                       px-4 rounded",
+            attrs: { onclick: "window.print()" }
+          },
+          [_vm._v("PRINT THE REPORT")]
+        )
       ]
     )
   },
@@ -3826,7 +3861,17 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("p", { staticClass: "md:text-center text-4xl ..." }, [
           _vm._v("CLIENT'S BANK")
-        ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n                       px-4 rounded",
+            attrs: { onclick: "window.print()" }
+          },
+          [_vm._v("PRINT THE REPORT")]
+        )
       ]
     )
   },
@@ -4185,6 +4230,16 @@ var staticRenderFns = [
         _c("div", {
           staticClass: "mt-1 mb-4 flex  items-center justify-between "
         }),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n                       px-4 rounded",
+            attrs: { onclick: "window.print()" }
+          },
+          [_vm._v("PRINT THE REPORT")]
+        ),
         _vm._v(" "),
         _c("p", { staticClass: "md:text-center text-4xl ..." }, [
           _vm._v("PAYMENTS REPORT")
@@ -4812,6 +4867,16 @@ var staticRenderFns = [
           attrs: { placeholder: "Search", type: "text" }
         }),
         _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n                       px-4 rounded",
+            attrs: { onclick: "window.print()" }
+          },
+          [_vm._v("PRINT THE REPORT")]
+        ),
+        _vm._v(" "),
         _c("p", { staticClass: "text-center md:text-center text-3xl ..." }, [
           _vm._v("Zobowiązania - REPORT")
         ])
@@ -4997,15 +5062,25 @@ var staticRenderFns = [
           staticClass: "mt-1 mb-4 flex  items-center justify-between "
         }),
         _vm._v(" "),
-        _c("input", {
-          staticClass:
-            "ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight \n                focus:outline-none focus:shadow-outline border-gray-300",
-          attrs: { placeholder: "Search", type: "text" }
-        }),
+        _c(
+          "button",
+          {
+            staticClass:
+              "bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n                       px-4 rounded",
+            attrs: { onclick: "window.print()" }
+          },
+          [_vm._v("PRINT THE REPORT")]
+        ),
         _vm._v(" "),
         _c("p", { staticClass: "text-left md:text-center text-3xl ..." }, [
           _vm._v("ZO and Data realizacia")
-        ])
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass:
+            "ml-2 shadow  pl-200 appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight \n                focus:outline-none focus:shadow-outline border-gray-300",
+          attrs: { placeholder: "Search", type: "text" }
+        })
       ]
     )
   },

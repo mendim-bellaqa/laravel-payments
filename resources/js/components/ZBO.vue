@@ -7,6 +7,10 @@
 				class="ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight 
                 focus:outline-none focus:shadow-outline border-gray-300"
 				    type="text">
+
+                    <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24
+                       px-4 rounded" onclick="window.print()">PRINT THE REPORT</button>
+                       
                 <p class="text-center md:text-center text-3xl ...">Zobowiązania - REPORT</p>
 
                 </div>

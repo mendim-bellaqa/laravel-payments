@@ -3,6 +3,8 @@
    <div class="px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out">
      <div class="mt-1 mb-4 flex  items-center justify-between "></div>	
      <p class="md:text-center text-4xl ...">CLIENT'S BANK</p>
+     <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24
+                       px-4 rounded" onclick="window.print()">PRINT THE REPORT</button>
     </div>
 
   <table class="md:container md:mx-auto rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800">
