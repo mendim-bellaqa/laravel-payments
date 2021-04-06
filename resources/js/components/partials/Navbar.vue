@@ -91,18 +91,7 @@
 
 
 		</ul>
-
-		<!-- <div>
-
-			<button class="h-10 static bottom-0 bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
-  			<span>LOG IN</span>
-			</button>
-			<button class="h-10 static bottom-0 bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center">
-  			<span>LOG OUT</span>
-			</button>
-
-		</div> -->
-
+		
     </nav>
 
 </template>

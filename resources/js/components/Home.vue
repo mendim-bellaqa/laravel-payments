@@ -98,8 +98,6 @@
 
 </tr>
 
-
-		    
         <tbody v-for="(data, index) in filterZw" :key="index.id">
 			
         <tr class="bg-gray-100 border-b border-gray-200">
@@ -285,9 +283,7 @@
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
 			</tr>
-
-
-
+      
 		</tbody>
 </table>
 
