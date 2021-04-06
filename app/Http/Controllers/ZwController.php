@@ -15,7 +15,7 @@ function index()
 {
 $data = Array();
 $dbconn = pg_connect("host=89.174.178.194 port=5432 dbname=hcelblag user=hcelb password=homvendo123");
-$qry = 'select * from ZW';
+$qry = 'select * from ZW limit 5';
 $result = pg_query($dbconn, $qry);
 $results = pg_fetch_all($result);
 foreach ($results as $rs)

@@ -5,12 +5,17 @@ import CLIENTS from '../components/CLIENTS.vue';
 import ZO from '../components/ZO.vue';
 import CLIENTS_BANK from '../components/CLIENTS_BANK.vue';
 import ZBO from '../components/ZBO.vue';
+import VueHtmlToPaper from 'vue-html-to-paper';
 
 
 
 
-Vue.use(VueRouter);
 
+Vue.use(VueRouter); 
+
+Vue.use(VueHtmlToPaper);
+// or using the defaults with no stylesheet
+Vue.use(VueHtmlToPaper);
 
 export default new VueRouter({
     
