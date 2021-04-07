@@ -24,6 +24,24 @@
 				</button>
 				</router-link>
 			</li>
+
+			<li
+				class="pl-9 py-2 font-semibold text-white dark:text-black-400
+				hover:bg-gray-500 dark-hover:bg-pink-100 mb-2 transition
+				transition duration-150 ease-in-out">
+				<router-link to="/zw" >
+				<button
+				class="focus:text-black-500 dark-focus:text-black-400
+				focus:outline-none w-full transition transition duration-150 ease-in-out">
+					<span class="flex items-center">
+						<i class="far fa-file-excel"></i>
+						<span class="ml-4 capitalize" >ZW - REPORT</span>
+					</span>
+				</button>
+				</router-link>
+			</li>
+
+
 			<li
 				class="pl-9 py-2 font-semibold text-white dark:text-black-400
 				hover:bg-gray-500 dark-hover:bg-pink-100 mb-2 transition

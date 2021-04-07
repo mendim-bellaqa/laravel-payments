@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../components/Home.vue';
+import ZW from '../components/ZW.vue';
 import CLIENTS from '../components/CLIENTS.vue';
 import ZO from '../components/ZO.vue';
 import CLIENTS_BANK from '../components/CLIENTS_BANK.vue';
@@ -25,6 +26,14 @@ export default new VueRouter({
             path: '/',
             name: 'home',
             component: Home,
+            // meta: {
+            //     requiresAuth: true
+            // }
+        },
+        {
+            path: '/zw',
+            name: 'zw',
+            component: ZW,
             // meta: {
             //     requiresAuth: true
             // }

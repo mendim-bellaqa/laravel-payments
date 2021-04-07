@@ -41,6 +41,8 @@
                 <td class="text-center px-4 py-3 border-collapse border-4 border-gray-300 ">{{ data['rr_282851663'] }}</td>
                 <td class="text-center px-4 py-3 border-collapse border-4 border-gray-300 ">{{ data['m1rr_k_value918'] }}</td>
                 <td class="text-center px-4 py-3 border-collapse border-4 border-gray-300 ">{{ data['m1rr_k_value984'] }}</td>
+
+
 			</tr>
 		</tbody>
 	

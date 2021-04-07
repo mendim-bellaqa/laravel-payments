@@ -2493,11 +2493,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      data: []
+      data: [],
+      search: ""
     };
   },
   created: function created() {
@@ -2508,7 +2533,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       return this.data.filter(function (data) {
-        return data['KOD KLIENTA'].toString().toLowerCase().match(_this.search);
+        return data.ktr_k_kod.toString().toLowerCase().match(_this.search);
       });
     }
   },
@@ -2541,6 +2566,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
 //
 //
 //
@@ -2696,12 +2723,157 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      data: [],
+      search: ""
+    };
+  },
+  created: function created() {
+    this.getZw();
+  },
+  computed: {
+    filterZw: function filterZw() {
+      var _this = this;
+
+      return this.data.filter(function (data) {
+        return data.ktr_k_kod.toString().toLowerCase().match(_this.search);
+      });
+    }
+  },
+  methods: {
+    getZw: function getZw() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('api/zw').then(function (response) {
+        _this2.data = response.data;
+      });
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/partials/Navbar.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/partials/Navbar.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2838,15 +3010,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_Home_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Home.vue */ "./resources/js/components/Home.vue");
-/* harmony import */ var _components_CLIENTS_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/CLIENTS.vue */ "./resources/js/components/CLIENTS.vue");
-/* harmony import */ var _components_ZO_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/ZO.vue */ "./resources/js/components/ZO.vue");
-/* harmony import */ var _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/CLIENTS_BANK.vue */ "./resources/js/components/CLIENTS_BANK.vue");
-/* harmony import */ var _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/ZBO.vue */ "./resources/js/components/ZBO.vue");
-/* harmony import */ var vue_html_to_paper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-html-to-paper */ "./node_modules/vue-html-to-paper/dist/index.js");
-/* harmony import */ var vue_html_to_paper__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(vue_html_to_paper__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_ZW_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/ZW.vue */ "./resources/js/components/ZW.vue");
+/* harmony import */ var _components_CLIENTS_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CLIENTS.vue */ "./resources/js/components/CLIENTS.vue");
+/* harmony import */ var _components_ZO_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/ZO.vue */ "./resources/js/components/ZO.vue");
+/* harmony import */ var _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CLIENTS_BANK.vue */ "./resources/js/components/CLIENTS_BANK.vue");
+/* harmony import */ var _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ZBO.vue */ "./resources/js/components/ZBO.vue");
+/* harmony import */ var vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-html-to-paper */ "./node_modules/vue-html-to-paper/dist/index.js");
+/* harmony import */ var vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -2855,11 +3028,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_6__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_7__.default);
-vue__WEBPACK_IMPORTED_MODULE_6__.default.use((vue_html_to_paper__WEBPACK_IMPORTED_MODULE_5___default())); // or using the defaults with no stylesheet
 
-vue__WEBPACK_IMPORTED_MODULE_6__.default.use((vue_html_to_paper__WEBPACK_IMPORTED_MODULE_5___default()));
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_7__.default({
+vue__WEBPACK_IMPORTED_MODULE_7__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_8__.default);
+vue__WEBPACK_IMPORTED_MODULE_7__.default.use((vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6___default())); // or using the defaults with no stylesheet
+
+vue__WEBPACK_IMPORTED_MODULE_7__.default.use((vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6___default()));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_8__.default({
   mode: 'history',
   routes: [{
     path: '/',
@@ -2869,30 +3043,37 @@ vue__WEBPACK_IMPORTED_MODULE_6__.default.use((vue_html_to_paper__WEBPACK_IMPORTE
     // }
 
   }, {
+    path: '/zw',
+    name: 'zw',
+    component: _components_ZW_vue__WEBPACK_IMPORTED_MODULE_1__.default // meta: {
+    //     requiresAuth: true
+    // }
+
+  }, {
     path: '/clients',
     name: 'clients',
-    component: _components_CLIENTS_vue__WEBPACK_IMPORTED_MODULE_1__.default // meta: {
+    component: _components_CLIENTS_vue__WEBPACK_IMPORTED_MODULE_2__.default // meta: {
     //     requiresAuth: true
     // }
 
   }, {
     path: '/zo',
     name: 'zo',
-    component: _components_ZO_vue__WEBPACK_IMPORTED_MODULE_2__.default // meta: {
+    component: _components_ZO_vue__WEBPACK_IMPORTED_MODULE_3__.default // meta: {
     //     requiresAuth: true
     // }
 
   }, {
     path: '/bank',
     name: 'bank',
-    component: _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_3__.default // meta: {
+    component: _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_4__.default // meta: {
     //     requiresAuth: true
     // }
 
   }, {
     path: '/zbo',
     name: 'zbo',
-    component: _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_4__.default // meta: {
+    component: _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_5__.default // meta: {
     //     requiresAuth: true
     // }
 
@@ -3352,6 +3533,45 @@ component.options.__file = "resources/js/components/ZO.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/ZW.vue":
+/*!****************************************!*\
+  !*** ./resources/js/components/ZW.vue ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ZW.vue?vue&type=template&id=9688af70& */ "./resources/js/components/ZW.vue?vue&type=template&id=9688af70&");
+/* harmony import */ var _ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ZW.vue?vue&type=script&lang=js& */ "./resources/js/components/ZW.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ZW.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/partials/Navbar.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/components/partials/Navbar.vue ***!
@@ -3490,6 +3710,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/ZW.vue?vue&type=script&lang=js&":
+/*!*****************************************************************!*\
+  !*** ./resources/js/components/ZW.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZW.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/components/partials/Navbar.vue?vue&type=script&lang=js&":
 /*!******************************************************************************!*\
   !*** ./resources/js/components/partials/Navbar.vue?vue&type=script&lang=js& ***!
@@ -3608,6 +3844,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZO_vue_vue_type_template_id_976a2780___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZO_vue_vue_type_template_id_976a2780___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZO.vue?vue&type=template&id=976a2780& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZO.vue?vue&type=template&id=976a2780&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ZW.vue?vue&type=template&id=9688af70&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/ZW.vue?vue&type=template&id=9688af70& ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ZW_vue_vue_type_template_id_9688af70___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ZW.vue?vue&type=template&id=9688af70& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=template&id=9688af70&");
 
 
 /***/ }),
@@ -4300,12 +4553,12 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "xl" }, [
+  return _c("div", [
     _c(
       "div",
       {
         staticClass:
-          "xl px-24 py-10 text-gray-700 dark:text-gray-500 transition duration-500 ease-in-out"
+          "xl px-24 py-10 text-gray-700 dark:text-gray-500 transition ease-in-out"
       },
       [
         _c("div", {
@@ -4316,7 +4569,7 @@ var render = function() {
           "button",
           {
             staticClass:
-              "w-24 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n                       px-4 rounded",
+              "w-24 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24\n        px-4 rounded",
             on: { click: _vm.print }
           },
           [_vm._v("PRINT ALL DATAS")]
@@ -4338,7 +4591,32 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm._m(0),
+    _c("div", { staticClass: "object-center content-center" }, [
+      _c("div", { staticClass: "object-center content-center" }, [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.search,
+              expression: "search"
+            }
+          ],
+          staticClass:
+            "ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight \n                focus:outline-none focus:shadow-outline border-gray-300",
+          attrs: { placeholder: "FILTER BY KOD KLIENTA", type: "text" },
+          domProps: { value: _vm.search },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.search = $event.target.value
+            }
+          }
+        })
+      ])
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "flex flex-col py-4", attrs: { id: "print" } }, [
       _c(
@@ -4348,11 +4626,11 @@ var render = function() {
             "xl rounded-t-lg m-5 table-fixed  bg-gray-200 text-gray-800"
         },
         [
+          _vm._m(0),
+          _vm._v(" "),
           _vm._m(1),
           _vm._v(" "),
           _vm._m(2),
-          _vm._v(" "),
-          _vm._m(3),
           _vm._v(" "),
           _vm._l(_vm.filterZw, function(data, index) {
             return _c("tbody", { key: index.id }, [
@@ -4402,7 +4680,7 @@ var render = function() {
                       staticClass:
                         "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
                     },
-                    [_vm._v(_vm._s(data["KOD KLIENTA"]))]
+                    [_vm._v(_vm._s(data["ktr_k_kod"]))]
                   ),
                   _vm._v(" "),
                   _c(
@@ -4579,987 +4857,11 @@ var render = function() {
           })
         ],
         2
-      ),
-      _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass:
-            "xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800"
-        },
-        [
-          _vm._m(4),
-          _vm._v(" "),
-          _vm._m(5),
-          _vm._v(" "),
-          _vm._l(_vm.filterZw, function(data, index) {
-            return _c("tbody", { key: index.id }, [
-              _c(
-                "tr",
-                { staticClass: "bg-gray-100 border-b border-gray-200" },
-                [
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(++index))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["data"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER NO"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["SERIA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["KOD KLIENTA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MODEL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MATERIAL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA NR"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["STATUS HISTORY"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER VALUE [PLN]"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma PLN"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma Euro"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["OPEN INVOCE"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Proforma"]))]
-                  ),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  })
-                ]
-              )
-            ])
-          })
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass:
-            "xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800"
-        },
-        [
-          _vm._m(6),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _vm._l(_vm.filterZw, function(data, index) {
-            return _c("tbody", { key: index.id }, [
-              _c(
-                "tr",
-                { staticClass: "bg-gray-100 border-b border-gray-200" },
-                [
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(++index))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["data"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER NO"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["SERIA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["KOD KLIENTA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MODEL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MATERIAL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA NR"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["STATUS HISTORY"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER VALUE [PLN]"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma PLN"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma Euro"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["OPEN INVOCE"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Proforma"]))]
-                  ),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  })
-                ]
-              )
-            ])
-          })
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass:
-            "xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800"
-        },
-        [
-          _vm._m(8),
-          _vm._v(" "),
-          _vm._m(9),
-          _vm._v(" "),
-          _vm._l(_vm.filterZw, function(data, index) {
-            return _c("tbody", { key: index.id }, [
-              _c(
-                "tr",
-                { staticClass: "bg-gray-100 border-b border-gray-200" },
-                [
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(++index))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["data"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER NO"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["SERIA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["KOD KLIENTA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MODEL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MATERIAL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA NR"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["STATUS HISTORY"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER VALUE [PLN]"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma PLN"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma Euro"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["OPEN INVOCE"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Proforma"]))]
-                  ),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  })
-                ]
-              )
-            ])
-          })
-        ],
-        2
-      ),
-      _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass:
-            "xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800"
-        },
-        [
-          _vm._m(10),
-          _vm._v(" "),
-          _vm._m(11),
-          _vm._v(" "),
-          _vm._l(_vm.filterZw, function(data, index) {
-            return _c("tbody", { key: index.id }, [
-              _c(
-                "tr",
-                { staticClass: "bg-gray-100 border-b border-gray-200" },
-                [
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(++index))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["data"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER NO"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["SERIA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["KOD KLIENTA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MODEL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["MATERIAL"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA NR"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["STATUS HISTORY"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ORDER VALUE [PLN]"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma PLN"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Value proforma Euro"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 1"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PROD DATE ZO 2"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["OPEN INVOCE"]))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "td",
-                    {
-                      staticClass:
-                        "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                    },
-                    [_vm._v(_vm._s(data["Proforma"]))]
-                  ),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  }),
-                  _vm._v(" "),
-                  _c("td", {
-                    staticClass:
-                      "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
-                  })
-                ]
-              )
-            ])
-          })
-        ],
-        2
       )
     ])
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "xl flex justify-center py-4 font-semibold border mt-10" },
-      [
-        _c(
-          "div",
-          { staticClass: "align-middle inline-block overflow-hidden" },
-          [
-            _c("div", { staticClass: "mx-auto container mb-8" }, [
-              _c("input", {
-                staticClass:
-                  "ml-2 shadow appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-gray-300",
-                attrs: { placeholder: "FILTER BY KOD KLIENTA", type: "text" }
-              })
-            ])
-          ]
-        )
-      ]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -5601,11 +4903,6 @@ var staticRenderFns = [
         _c("th", {
           staticClass:
             "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 w-2/5  "
-        }),
-        _vm._v(" "),
-        _c("th", {
-          staticClass:
-            "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 "
         }),
         _vm._v(" "),
         _c(
@@ -5661,7 +4958,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", {
           staticClass:
-            "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "
+            "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 "
         }),
         _vm._v(" "),
         _c("th", {
@@ -5689,7 +4986,7 @@ var staticRenderFns = [
             staticClass:
               "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200 "
           },
-          [_vm._v(" 3/25/2021")]
+          [_vm._v(" 07/04/2021")]
         ),
         _vm._v(" "),
         _c(
@@ -5707,8 +5004,13 @@ var staticRenderFns = [
             staticClass:
               "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200  "
           },
-          [_vm._v(" 1077869.965")]
+          [_vm._v(" 123.965")]
         ),
+        _vm._v(" "),
+        _c("th", {
+          staticClass:
+            "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 b "
+        }),
         _vm._v(" "),
         _c("th", {
           staticClass:
@@ -6005,1058 +5307,6 @@ var staticRenderFns = [
             "1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)"
           )
         ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "tr",
-      { staticClass: "border-separate border-4 border-gray-300 " },
-      [
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("L.P")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("BUYING SUPPLIER KATEGORY (PIORYTET)")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER NO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" SERIA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" KOD KLIENTA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MODEL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MATERIAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA NR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" STATUS HISTORY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" DELIVERY PAYMENT AFTER PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER VALUE [PLN]")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA PLN")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA EURO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PAYMENT DATE PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" OPEN INVOCE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE PUNCTUAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS TO PAY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v("  POSITIONS PAYED")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS STILL TO PAY")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c(
-        "td",
-        {
-          staticClass:
-            "sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
-          attrs: { colspan: "26" }
-        },
-        [
-          _vm._v(
-            "2) due within 3 days or older WITH ZW - (based on official payment term and  sorted alhabetically by KOD Klienta)"
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "tr",
-      { staticClass: "border-separate border-4 border-gray-300 " },
-      [
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("L.P")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("BUYING SUPPLIER KATEGORY (PIORYTET)")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER NO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" SERIA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" KOD KLIENTA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MODEL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MATERIAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA NR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" STATUS HISTORY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" DELIVERY PAYMENT AFTER PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER VALUE [PLN]")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA PLN")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA EURO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PAYMENT DATE PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" OPEN INVOCE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE PUNCTUAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS TO PAY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v("  POSITIONS PAYED")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS STILL TO PAY")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c(
-        "td",
-        {
-          staticClass:
-            "sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
-          attrs: { colspan: "26" }
-        },
-        [
-          _vm._v(
-            "3) due within 3 days or older without ZW - (based on official payment term and  sorted alhabetically by KOD Klienta)"
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "tr",
-      { staticClass: "border-separate border-4 border-gray-300 " },
-      [
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("L.P")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("BUYING SUPPLIER KATEGORY (PIORYTET)")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER NO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" SERIA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" KOD KLIENTA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MODEL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MATERIAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA NR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" STATUS HISTORY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" DELIVERY PAYMENT AFTER PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER VALUE [PLN]")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA PLN")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA EURO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PAYMENT DATE PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" OPEN INVOCE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE PUNCTUAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS TO PAY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v("  POSITIONS PAYED")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS STILL TO PAY")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c(
-        "td",
-        {
-          staticClass:
-            "sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
-          attrs: { colspan: "26" }
-        },
-        [
-          _vm._v(
-            '4) NOT to pay by due date -  (to pay by comment in Vendo "agreemen/ugroda"  with and without ZO due or not due) '
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "tr",
-      { staticClass: "border-separate border-4 border-gray-300 " },
-      [
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("L.P")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v("BUYING SUPPLIER KATEGORY (PIORYTET)")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER NO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" SERIA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" KOD KLIENTA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MODEL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible text-center px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" MATERIAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA NR")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" STATUS HISTORY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" DELIVERY PAYMENT AFTER PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ORDER VALUE [PLN]")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA PLN")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" VALUE PROFORMA EURO")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 "
-          },
-          [_vm._v(" ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 1")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-blue-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROD DATE ZO 2")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PAYMENT DATE PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" OPEN INVOCE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" PROFORMA")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE PUNCTUAL")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS TO PAY")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v("  POSITIONS PAYED")]
-        ),
-        _vm._v(" "),
-        _c(
-          "th",
-          {
-            staticClass:
-              "invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"
-          },
-          [_vm._v(" POSITIONS STILL TO PAY")]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c(
-        "td",
-        {
-          staticClass:
-            "sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
-          attrs: { colspan: "26" }
-        },
-        [_vm._v("5) manually added to list")]
       )
     ])
   }
@@ -7469,6 +5719,461 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=template&id=9688af70&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ZW.vue?vue&type=template&id=9688af70& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "table",
+      {
+        staticClass:
+          "xl rounded-t-lg m-5 table-fixed  bg-gray-200 text-gray-800"
+      },
+      [
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._l(_vm.filterZw, function(data, index) {
+          return _c("tbody", { key: index.id }, [
+            _c("tr", { staticClass: "bg-gray-100 border-b border-gray-200" }, [
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 border-gray-300"
+                },
+                [_vm._v(_vm._s(++index))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-2 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["data"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["ORDER NO"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["SERIA"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["ktr_k_kod"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["MODEL"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["MATERIAL"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["PROFORMA NR"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["PROFORMA"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["STATUS HISTORY"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["DELIVERY PAYMENT AFTER PROFORM"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["ORDER VALUE [PLN]"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["Value proforma PLN"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["Value proforma Euro"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["ZO 1"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["ZO 2"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["PROD DATE ZO 1"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["PROD DATE ZO 2"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["PAYMENT DATE PROFORMA"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["OPEN INVOCE"]))]
+              ),
+              _vm._v(" "),
+              _c(
+                "td",
+                {
+                  staticClass:
+                    "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
+                },
+                [_vm._v(_vm._s(data["Proforma"]))]
+              )
+            ])
+          ])
+        })
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "xl px-24 py-10 text-gray-700 dark:text-gray-500 transition ease-in-out"
+      },
+      [
+        _c("div", {
+          staticClass: "mt-1 mb-4 flex  items-center justify-between "
+        }),
+        _vm._v(" "),
+        _c("p", { staticClass: "md:text-center text-4xl ..." }, [
+          _vm._v("ZW REPORT")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "tr",
+      { staticClass: "border-separate border-4 border-gray-300 " },
+      [
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("L.P")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v("BUYING SUPPLIER KATEGORY (PIORYTET)")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" ORDER NO")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" SERIA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" KOD KLIENTA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" MODEL")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 w-2/5"
+          },
+          [_vm._v(" MATERIAL")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" PROFORMA NR")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" PROFORMA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" STATUS HISTORY")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" DELIVERY PAYMENT AFTER PROFORMA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" ORDER VALUE [PLN]")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" VALUE PROFORMA PLN")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" VALUE PROFORMA EURO")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" ZO 1")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300 "
+          },
+          [_vm._v(" ZO 2")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300"
+          },
+          [_vm._v(" PROD DATE ZO 1")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300"
+          },
+          [_vm._v(" PROD DATE ZO 2")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300"
+          },
+          [_vm._v(" PAYMENT DATE PROFORMA")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300"
+          },
+          [_vm._v(" OPEN INVOCE")]
+        ),
+        _vm._v(" "),
+        _c(
+          "th",
+          {
+            staticClass:
+              "px-2 py-2 sticky top-0 px-4 py-2  text-black-900  border-collapse border-4 border-gray-300"
+          },
+          [_vm._v(" PROFORMA")]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/partials/Navbar.vue?vue&type=template&id=40985fd2&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/partials/Navbar.vue?vue&type=template&id=40985fd2& ***!
@@ -7524,6 +6229,35 @@ var render = function() {
                     _vm._v(" "),
                     _c("span", { staticClass: "ml-4 capitalize" }, [
                       _vm._v("PAYMENTS - REPORT")
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "li",
+          {
+            staticClass:
+              "pl-9 py-2 font-semibold text-white dark:text-black-400\n\t\t\t\thover:bg-gray-500 dark-hover:bg-pink-100 mb-2 transition\n\t\t\t\ttransition duration-150 ease-in-out"
+          },
+          [
+            _c("router-link", { attrs: { to: "/zw" } }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "focus:text-black-500 dark-focus:text-black-400\n\t\t\t\tfocus:outline-none w-full transition transition duration-150 ease-in-out"
+                },
+                [
+                  _c("span", { staticClass: "flex items-center" }, [
+                    _c("i", { staticClass: "far fa-file-excel" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "ml-4 capitalize" }, [
+                      _vm._v("ZW - REPORT")
                     ])
                   ])
                 ]

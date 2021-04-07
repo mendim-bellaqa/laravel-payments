@@ -41,7 +41,8 @@ $zw['PROD DATE ZO 2'] = $rs['m831tr_767507672']; //to check
 $zw['PAYMENT DATE PROFORMA'] = $rs['tr_tr_datasprzedaz'];
 $zw['OPEN INVOCE'] = $rs['tr_tr_rodzaj']; //to check
 $zw['Proforma'] = $rs['tr_73104138']; //to check
-$zw['value_3_days_before_internal_payment_date'] = $rs['value_3_days_before_internal_payment_date']->if['ktr_k_kod']="OTTIMO";
+$zw['value_3_days_before_internal_payment_date'] = $rs['value_3_days_before_internal_payment_date'];
+// $zw['value_3_days_before_internal_payment_date'] = $rs['value_3_days_before_internal_payment_date']->if['ktr_k_kod']="OTTIMO";
 
 
 
