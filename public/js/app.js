@@ -2508,15 +2508,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -4716,7 +4707,7 @@ var render = function() {
                       staticClass:
                         "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
                     },
-                    [_vm._v(_vm._s(data["PROFORMA"]))]
+                    [_vm._v(_vm._s(data["m1tre0_k_value916"]))]
                   ),
                   _vm._v(" "),
                   _c(
@@ -4824,7 +4815,7 @@ var render = function() {
                       staticClass:
                         "px-4 py-3 border-collapse border-4 w-7 border-gray-300"
                     },
-                    [_vm._v(_vm._s(data["Proforma"]))]
+                    [_vm._v(_vm._s(data["m1tre0_k_value916"]))]
                   ),
                   _vm._v(" "),
                   _c("td", {
@@ -4986,7 +4977,7 @@ var staticRenderFns = [
             staticClass:
               "px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200 "
           },
-          [_vm._v(" 07/04/2021")]
+          [_vm._v(" 08/04/2021")]
         ),
         _vm._v(" "),
         _c(

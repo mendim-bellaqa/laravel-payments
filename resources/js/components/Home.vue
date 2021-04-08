@@ -60,7 +60,7 @@
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200 "> DATE:</th>
-                <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200 "> 07/04/2021</th>
+                <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200 "> 08/04/2021</th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200  "> TOTAL:</th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 border-4 border-gray-300 bg-yellow-200  "> 123.965</th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 b "> </th>
@@ -99,16 +99,10 @@
                 <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300">  POSITIONS PAYED</th>
                 <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
       </tr>
-
-
 <tr>
-
         <td colspan="26" class="sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl">1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)</td>
-
 </tr>
-
         <tbody v-for="(data, index) in filterZw" :key="index.id">
-			
         <tr class="bg-gray-100 border-b border-gray-200">
           
                 <td class="px-4 py-3 border-collapse border-4 border-gray-300">{{++index}}</td>
@@ -119,7 +113,7 @@
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['MODEL'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300 w-3/4">{{ data['MATERIAL'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['PROFORMA NR'] }}</td>
-                <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['PROFORMA'] }}</td>
+                <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['m1tre0_k_value916'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['STATUS HISTORY'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['DELIVERY PAYMENT AFTER PROFORM'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['ORDER VALUE [PLN]'] }}</td>
@@ -131,16 +125,14 @@
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['PROD DATE ZO 2'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['PAYMENT DATE PROFORMA'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['OPEN INVOCE'] }}</td>
-                <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['Proforma'] }}</td>
+                <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['m1tre0_k_value916'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
+                 
 			</tr>
-
-
-
 		</tbody>
 </table>
 

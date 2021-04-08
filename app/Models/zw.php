@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class zw extends Model
 {
-    use HasFactory;
+    protected $guarded = [];
+
 }
