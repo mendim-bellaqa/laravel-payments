@@ -39,13 +39,6 @@
                 
 
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
-                  <!-- <div class="relative inline-flex">
-                    <input placeholder="FILTER BY KOD KLIENTA"
-                    class="mt-6 ml-1 shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-gray-300"
-                    type="text"
-                    v-model="search"
-                    />
-                  </div> -->
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 w-2/5  "> </th>
@@ -100,7 +93,7 @@
                 <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
       </tr>
 <tr>
-        <td colspan="26" class="sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl">1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)</td>
+        <td colspan="26" class="w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl">1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)</td>
 </tr>
         <tbody v-for="(data, index) in filterZw" :key="index.id">
         <tr class="bg-gray-100 border-b border-gray-200">

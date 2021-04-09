@@ -23,11 +23,6 @@ foreach ($results as $rs)
 $zw['test1'] = $rs['tr_tr_rodzaj'];
 $zw['data'] = $rs['m1tre0_k_value971'];
 $zw['ORDER NO'] = $rs['tr_1971859888'];
-
-// zw::where('tr_1971859888', 'not like', "%227/A/21%")->get();
-// $zw['ORDER NO'] = $rs['tr_1971859888']->where('tr_1971859888', 'not like', "%227/A/21%")->get();
-// $zw['ORDER NO'] = $rs['tr_1971859888']->where('tr_1971859888', 'not like', '%%')->get();
-
 $zw['SERIA'] = $rs['zltr_1307032275'];
 $zw['ktr_k_kod'] = $rs['ktr_k_kod'];
 $zw['MODEL'] = $rs['m831tr_tr_value911'];

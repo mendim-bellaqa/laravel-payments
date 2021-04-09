@@ -2502,13 +2502,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -5291,7 +5284,7 @@ var staticRenderFns = [
         "td",
         {
           staticClass:
-            "sticky w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
+            "w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl",
           attrs: { colspan: "26" }
         },
         [
