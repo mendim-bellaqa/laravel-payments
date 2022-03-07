@@ -3,7 +3,7 @@
 
    <div class="xl px-24 py-10 text-gray-700 dark:text-gray-500 transition ease-in-out">
 
-   <div class="mt-1 mb-4 flex  items-center justify-between "></div>	
+   <div class="mt-1 mb-4 flex  items-center justify-between "></div>
 
 
   <button  class="w-24 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24
@@ -15,29 +15,27 @@
      <p class="md:text-center text-4xl ...">PAYMENTS REPORT</p>
 
     </div>
-    
+
       <div class="object-center content-center">
           <div class="object-center content-center">
                   <input placeholder="FILTER BY KOD KLIENTA"
-                  class="ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight 
+                  class="ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight
                 focus:outline-none focus:shadow-outline border-gray-300"
                   type="text"
                   v-model="search"
                   />
           </div>
-      </div>       
+      </div>
 
    <div class="flex flex-col py-4" id="print">
-        
+
 <table class="xl rounded-t-lg m-5 table-fixed  bg-gray-200 text-gray-800">
-        
+
             <tr class="w-12 border-separate border-4 border-gray-300 ">
-              
+
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 "></th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200 b "></th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
-                
-
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
                 <th class="px-1 py-1 sticky top-0 px-2 py-1 w-24 text-black-900 bg-gray-200  "> </th>
@@ -90,14 +88,14 @@
                 <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"> VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE</th>
                 <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"> POSITIONS TO PAY</th>
                 <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300">  POSITIONS PAYED</th>
-                <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
+                <th class="px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>
       </tr>
 <tr>
         <td colspan="26" class="w-full px-1 py-1 top-0 px-2 py-1 w-24 border-4 border-gray-300 px-2 py-2 top-0 px-4 py-2 text-center bg-blue-300 text-white font-extrabold text-xl">1) Proforma - (sorted by payment date according to leadtime of suplier  and realiscij date  HC)</td>
 </tr>
         <tbody v-for="(data, index) in filterZw" :key="index.id">
         <tr class="bg-gray-100 border-b border-gray-200">
-          
+
                 <td class="px-4 py-3 border-collapse border-4 border-gray-300">{{++index}}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['data'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['ORDER NO']}}</td>
@@ -124,7 +122,7 @@
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
-                 
+
 			</tr>
 		</tbody>
 </table>
@@ -145,7 +143,7 @@
 </table> -->
 
 <!-- <table class="xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800">
-        
+
          <tr class="border-separate border-4 border-gray-300 ">
 
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 ">L.P</th>
@@ -173,8 +171,8 @@
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"> VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"> POSITIONS TO PAY</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300">  POSITIONS PAYED</th>
-                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
-      
+                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>
+
       </tr>
 
   <tr>
@@ -185,9 +183,9 @@
 
 
           <tbody v-for="(data, index) in filterZw" :key="index.id">
-			
+
         <tr class="bg-gray-100 border-b border-gray-200">
-          
+
                 <td class="px-4 py-3 border-collapse border-4 border-gray-300">{{++index}}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['data'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['ORDER NO']}}</td>
@@ -222,7 +220,7 @@
 </table>
 
 <table class="xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800">
-        
+
          <tr class="border-separate border-4 border-gray-300 ">
 
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 ">L.P</th>
@@ -250,8 +248,8 @@
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"> VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"> POSITIONS TO PAY</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300">  POSITIONS PAYED</th>
-                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
-      
+                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>
+
       </tr>
 
   <tr>
@@ -262,9 +260,9 @@
 
 
           <tbody v-for="(data, index) in filterZw" :key="index.id">
-			
+
         <tr class="bg-gray-100 border-b border-gray-200">
-          
+
                 <td class="px-4 py-3 border-collapse border-4 border-gray-300">{{++index}}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['data'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['ORDER NO']}}</td>
@@ -292,12 +290,12 @@
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300"></td>
 			</tr>
-      
+
 		</tbody>
 </table>
 
 <table class="xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800">
-        
+
          <tr class="border-separate border-4 border-gray-300 ">
 
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 ">L.P</th>
@@ -325,8 +323,8 @@
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"> VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"> POSITIONS TO PAY</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300">  POSITIONS PAYED</th>
-                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
-      
+                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>
+
       </tr>
 
   <tr>
@@ -337,9 +335,9 @@
 
 
           <tbody v-for="(data, index) in filterZw" :key="index.id">
-			
+
         <tr class="bg-gray-100 border-b border-gray-200">
-          
+
                 <td class="px-4 py-3 border-collapse border-4 border-gray-300">{{++index}}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['data'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['ORDER NO']}}</td>
@@ -374,7 +372,7 @@
 </table>
 
 <table class="xl rounded-t-lg m-5 table-fixed bg-gray-200 text-gray-800">
-        
+
          <tr class="border-separate border-4 border-gray-300 ">
 
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2 text-black-900 bg-yellow-200 border-collapse border-4 border-gray-300 ">L.P</th>
@@ -402,8 +400,8 @@
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-300 border-collapse border-4 border-gray-300"> VALUE 3 DAYS BEFORE INTERNAL PAYMENT DATE</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-yellow-500 border-collapse border-4 border-gray-300"> POSITIONS TO PAY</th>
                 <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-purple-400 border-collapse border-4 border-gray-300">  POSITIONS PAYED</th>
-                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>   
-      
+                <th class="invisible px-2 py-2 sticky top-0 px-4 py-2  text-black-900 bg-green-200 border-collapse border-4 border-gray-300"> POSITIONS STILL TO PAY</th>
+
       </tr>
 
   <tr>
@@ -414,9 +412,9 @@
 
 
           <tbody v-for="(data, index) in filterZw" :key="index.id">
-			
+
         <tr class="bg-gray-100 border-b border-gray-200">
-          
+
                 <td class="px-4 py-3 border-collapse border-4 border-gray-300">{{++index}}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-2 border-gray-300">{{ data['data'] }}</td>
                 <td class="px-4 py-3 border-collapse border-4 w-7 border-gray-300">{{ data['ORDER NO']}}</td>
@@ -461,29 +459,29 @@
               search: "",
           }
       },
-        created() 
+        created()
     {
             this.getZw();
     },
 
   computed:{
-      filterZw: function () 
+      filterZw: function ()
       {
-        return this.data.filter(data => 
+        return this.data.filter(data =>
         {
           return data.ktr_k_kod.toString().toLowerCase().match(this.search);
-         
+
         });
       },
     },
 
   methods:{
-      getZw() 
+      getZw()
       {
 
         axios.get('api/get-zw')
           .then((response) => {
-                      
+
             this.data = response.data;
           });
       },

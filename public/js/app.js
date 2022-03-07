@@ -2500,8 +2500,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -3004,7 +3002,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_CLIENTS_BANK_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CLIENTS_BANK.vue */ "./resources/js/components/CLIENTS_BANK.vue");
 /* harmony import */ var _components_ZBO_vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/ZBO.vue */ "./resources/js/components/ZBO.vue");
 /* harmony import */ var vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-html-to-paper */ "./node_modules/vue-html-to-paper/dist/index.js");
-/* harmony import */ var vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
@@ -3015,9 +3012,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 vue__WEBPACK_IMPORTED_MODULE_7__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_8__.default);
-vue__WEBPACK_IMPORTED_MODULE_7__.default.use((vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6___default())); // or using the defaults with no stylesheet
+vue__WEBPACK_IMPORTED_MODULE_7__.default.use(vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6__.default); // or using the defaults with no stylesheet
 
-vue__WEBPACK_IMPORTED_MODULE_7__.default.use((vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6___default()));
+vue__WEBPACK_IMPORTED_MODULE_7__.default.use(vue_html_to_paper__WEBPACK_IMPORTED_MODULE_6__.default);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_8__.default({
   mode: 'history',
   routes: [{
@@ -3278,9 +3275,96 @@ process.umask = function() { return 0; };
 /*!******************************************************!*\
   !*** ./node_modules/vue-html-to-paper/dist/index.js ***!
   \******************************************************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, exports) => {
 
-module.exports=function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=0)}([function(e,t,n){"use strict";function r(e,t){t.forEach(function(t){var n=e.document.createElement("link");n.setAttribute("rel","stylesheet"),n.setAttribute("type","text/css"),n.setAttribute("href",t),e.document.getElementsByTagName("head")[0].appendChild(n)})}Object.defineProperty(t,"__esModule",{value:!0}),t.default={install:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};e.prototype.$htmlToPaper=function(e,n){var o=arguments.length>2&&void 0!==arguments[2]?arguments[2]:function(){return!0},l=["fullscreen=yes","titlebar=yes","scrollbars=yes"],u=[],i=t.name,s=void 0===i?"_blank":i,c=t.specs,a=void 0===c?l:c,d=t.replace,p=void 0===d||d,f=t.styles,m=void 0===f?u:f;n&&(n.name&&(s=n.name),n.specs&&(a=n.specs),n.replace&&(p=n.replace),n.styles&&(m=n.styles)),console.warn(m),a=a.length?a.join(","):"";var y=document.getElementById(e);if(!y)return void alert("Element to print #"+e+" not found!");var v=window.open("",s,a,p);return v.document.write("\n        <html>\n          <head>\n            <title>"+document.title+"</title>\n          </head>\n          <body>\n            "+y.innerHTML+"\n          </body>\n        </html>\n      "),r(v,m),setTimeout(function(){v.document.close(),v.focus(),v.print(),v.close(),o()},1e3),!0}}}}]);
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+function addStyles (win, styles) {
+  styles.forEach(style => {
+    let link = win.document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('type', 'text/css');
+    link.setAttribute('href', style);
+    win.document.getElementsByTagName('head')[0].appendChild(link);
+  });
+}
+
+function openWindow (url, name, props) {
+  let windowRef = null;
+  windowRef = window.open(url, name, props);
+  if (!windowRef.opener) {
+    windowRef.opener = self;
+  }
+  windowRef.focus();
+  return windowRef;
+}
+  
+const VueHtmlToPaper = {
+  install (Vue, options = {}) {
+    Vue.prototype.$htmlToPaper = (el, localOptions, cb = () => true) => {
+      let defaultName = '_blank', 
+        defaultSpecs = ['fullscreen=yes','titlebar=yes', 'scrollbars=yes'],
+        defaultReplace = true,
+        defaultStyles = [];
+      let {
+        name = defaultName,
+        specs = defaultSpecs,
+        replace = defaultReplace,
+        styles = defaultStyles,
+      } = options;
+
+      // If has localOptions
+      // TODO: improve logic
+      if (!!localOptions) {
+        if (localOptions.name) name = localOptions.name;
+        if (localOptions.specs) specs = localOptions.specs;
+        if (localOptions.replace) replace = localOptions.replace;
+        if (localOptions.styles) styles = localOptions.styles;
+      }
+
+      specs = !!specs.length ? specs.join(',') : '';
+
+      const element = window.document.getElementById(el);
+
+      if (!element) {
+        alert(`Element to print #${el} not found!`);
+        return;
+      }
+      
+      const url = '';
+      const win = openWindow(url, name, specs);
+
+      win.document.write(`
+        <html>
+          <head>
+            <title>${window.document.title}</title>
+          </head>
+          <body>
+            ${element.innerHTML}
+          </body>
+        </html>
+      `);
+
+      addStyles(win, styles);
+      
+      setTimeout(() => {
+        win.document.close();
+        win.focus();
+        win.print();
+        setTimeout(function () {window.close();}, 1);
+        cb();
+      }, 1000);
+        
+      return true;
+    };
+  },
+};
+
+exports.default = VueHtmlToPaper;
+
 
 /***/ }),
 
@@ -4588,7 +4672,7 @@ var render = function() {
             }
           ],
           staticClass:
-            "ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight \n                focus:outline-none focus:shadow-outline border-gray-300",
+            "ml-2 shadow  appearance-none border rounded-md py-2 px-3 text-gray-700 leading-tight\n                focus:outline-none focus:shadow-outline border-gray-300",
           attrs: { placeholder: "FILTER BY KOD KLIENTA", type: "text" },
           domProps: { value: _vm.search },
           on: {
@@ -6503,7 +6587,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /*!
-  * vue-router v3.5.1
+  * vue-router v3.5.3
   * (c) 2021 Evan You
   * @license MIT
   */
@@ -6516,7 +6600,7 @@ function assert (condition, message) {
 }
 
 function warn (condition, message) {
-  if ( true && !condition) {
+  if (!condition) {
     typeof console !== 'undefined' && console.warn(("[vue-router] " + message));
   }
 }
@@ -7022,7 +7106,7 @@ function parsePath (path) {
 }
 
 function cleanPath (path) {
-  return path.replace(/\/\//g, '/')
+  return path.replace(/\/+/g, '/')
 }
 
 var isarray = Array.isArray || function (arr) {
@@ -8066,7 +8150,7 @@ function createMatcher (
     createRouteMap([route || parentOrRoute], pathList, pathMap, nameMap, parent);
 
     // add aliases of parent
-    if (parent) {
+    if (parent && parent.alias.length) {
       createRouteMap(
         // $flow-disable-line route is defined if parent is
         parent.alias.map(function (alias) { return ({ path: alias, children: [route] }); }),
@@ -8814,7 +8898,9 @@ History.prototype.confirmTransition = function confirmTransition (route, onCompl
           cb(err);
         });
       } else {
-        warn(false, 'uncaught error during route navigation:');
+        if (true) {
+          warn(false, 'uncaught error during route navigation:');
+        }
         console.error(err);
       }
     }
@@ -8829,6 +8915,9 @@ History.prototype.confirmTransition = function confirmTransition (route, onCompl
     route.matched[lastRouteIndex] === current.matched[lastCurrentIndex]
   ) {
     this.ensureURL();
+    if (route.hash) {
+      handleScroll(this.router, current, route, false);
+    }
     return abort(createNavigationDuplicatedError(current, route))
   }
 
@@ -9137,7 +9226,13 @@ var HTML5History = /*@__PURE__*/(function (History) {
 
 function getLocation (base) {
   var path = window.location.pathname;
-  if (base && path.toLowerCase().indexOf(base.toLowerCase()) === 0) {
+  var pathLowerCase = path.toLowerCase();
+  var baseLowerCase = base.toLowerCase();
+  // base="/a" shouldn't turn path="/app" into "/a/pp"
+  // https://github.com/vuejs/vue-router/issues/3555
+  // so we ensure the trailing slash in the base
+  if (base && ((pathLowerCase === baseLowerCase) ||
+    (pathLowerCase.indexOf(cleanPath(baseLowerCase + '/')) === 0))) {
     path = path.slice(base.length);
   }
   return (path || '/') + window.location.search + window.location.hash
@@ -9386,6 +9481,9 @@ var AbstractHistory = /*@__PURE__*/(function (History) {
 var VueRouter = function VueRouter (options) {
   if ( options === void 0 ) options = {};
 
+  if (true) {
+    warn(this instanceof VueRouter, "Router must be called with the new operator.");
+  }
   this.app = null;
   this.apps = [];
   this.options = options;
@@ -9630,7 +9728,7 @@ function createHref (base, fullPath, mode) {
 }
 
 VueRouter.install = install;
-VueRouter.version = '3.5.1';
+VueRouter.version = '3.5.3';
 VueRouter.isNavigationFailure = isNavigationFailure;
 VueRouter.NavigationFailureType = NavigationFailureType;
 VueRouter.START_LOCATION = START;
