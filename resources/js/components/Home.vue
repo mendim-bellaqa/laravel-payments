@@ -12,7 +12,7 @@
        <button class="w-24 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 w-24
                        px-4 rounded" onclick="window.print()">PRINT CURRENT VIEW</button>
 
-     <p class="md:text-center text-4xl ..."> TEST</p>
+     <p class="md:text-center text-4xl ...">PAYMENTS REPORT</p>
 
     </div>
 
