@@ -2,10 +2,7 @@
 
 <p align="center" ><a href="https://github.com/mendim-bellaqa/laravel-payments" target="_blank">
 </a>
-    <img src="https://github.com/mendim-bellaqa/laraveltodo/blob/laraphoto/public/images/2.%20LOGIN.jpg" width="400"></a>
-    <img src="https://github.com/mendim-bellaqa/laraveltodo/blob/laraphoto/public/images/3.%20HOME.jpg" width="400"></a>
-    <img src="https://github.com/mendim-bellaqa/laraveltodo/blob/laraphoto/public/images/4.%20ADD%20NEW.jpg" width="400"></a>
-    <img src="https://github.com/mendim-bellaqa/laraveltodo/blob/laraphoto/public/images/5.%20EDIT.jpg" width="400"></a>
+    <img src="https://github.com/mendim-bellaqa/laravel-payments/blob/master/public/images/payments.jpg" width="400"></a>
 </p>
 <h1 align="center">
 #About this project
