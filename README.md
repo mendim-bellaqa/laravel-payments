@@ -8,7 +8,7 @@
     <img src="https://github.com/mendim-bellaqa/laraveltodo/blob/laraphoto/public/images/5.%20EDIT.jpg" width="400"></a>
 </p>
 <h1 align="center">
-#About the project
+#About this project
 </h1>
 
 <p align="center">
