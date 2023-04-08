@@ -8,15 +8,8 @@
 #About this project
 </h1>
 
-A laravel project that was created by me, which has to do with calling data from the database of a Polish company, where the data is displayed based on tables and functions created that return specific results related to various reports of the company.
+I created a Laravel project that involves retrieving data from a Polish company's database. The retrieved data is then displayed using tables and functions specifically designed to produce results related to the company's various reports. This project was completed as part of my previous work experience.
 
+The project also involves accessing tables from non-local databases used by the company's employees to generate report results registered by the employees themselves in Poland. Additionally, it deals with the payments the company makes to assets owned by other registered companies.
 
-
-This project is part of the work in previous companies.
-
-This includes some tables from (non-local) databases that are utilized by the company's employees, as it produces the results of reports that are registered by the employees themselves in Poland.
-
-This project also concerns the payments of the company to the assets of other companies, where each company is registered.
-
-The idea was to display data, payments, debts and other information related to other companies, but of course for security reasons the data will not be displayed.
-
+The goal was to display data, payments, debts, and other information related to the other companies. However, due to security concerns, the data will not be visible.
